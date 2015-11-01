@@ -43,3 +43,17 @@ Router.map(function() {
     template: 'contact'
   });
 });
+
+Router.map(function() {
+  this.route('books', {
+    path: '/blog/books',
+    template: 'books'
+  });
+});
+
+Router.map(function() {
+  this.route('sketch', {
+    path: '/blog/sketch',
+    template: 'sketch'
+  });
+});
