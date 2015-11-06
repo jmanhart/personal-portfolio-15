@@ -57,3 +57,17 @@ Router.map(function() {
     template: 'sketch'
   });
 });
+
+Router.map(function() {
+  this.route('design', {
+    path: '/work/design',
+    template: 'design'
+  });
+});
+
+Router.map(function() {
+  this.route('dev', {
+    path: '/work/dev',
+    template: 'dev'
+  });
+});
