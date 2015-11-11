@@ -1,8 +1,6 @@
 .nav-top
   width 960px
   margin 0 auto
-  box-shadow 0 1px 1px rgba(0,0,0,.1)
-  background rgba(255,255,255,.95)
 
 header
   width 100%
@@ -12,7 +10,7 @@ header
   top 0
   left 0
   z-index 999
-  box-shadow 0 1px 1px rgba(0,0,0,.1)
+  box-shadow 0 2px 20px rgba(0,0,0,0.125)
   background rgba(255,255,255,.95)
   -webkit-transition height 0.3s
   -moz-transition height 0.3s
@@ -23,7 +21,7 @@ header
 header h1#logo
   display inline-block
   height 150px
-  line-height 75px
+  line-height 150px
   float: left
   font-family "Oswald", sans-serif
   font-size 60px
@@ -34,7 +32,7 @@ header h1#logo
   -ms-transition all 0.3s
   -o-transition all 0.3s
   transition all 0.3s
-
+  visibility visible
 
 header nav
   display inline-block
@@ -57,11 +55,15 @@ header nav a:hover
 header.smaller
   height 65px
 
+
+
+
 header.smaller h1#logo
   width 150px
   height 75px
-  line-height 30px
+  line-height 70px
   font-size 30px
+  visibility visible
 
 header.smaller nav a
   line-height 75px
