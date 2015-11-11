@@ -1,6 +1,10 @@
 standard-app-packages
 iron:router
-danimal:tumblr
 jquery
 mquandalle:stylus
 standard-minifiers
+meteorhacks:npm
+
+
+npm-container
+cosmos:browserify
