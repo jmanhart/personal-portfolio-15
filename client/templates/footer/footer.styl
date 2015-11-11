@@ -1,22 +1,6 @@
-// .page-wrap
-//   min-height 100%
-//   margin-bottom -142px
-//
-// .page-wrap:after
-//   content ""
-//   display block
-//
-// .site-footer, .page-wrap:after
-//   height 142px
-//
-// .site-footer
-//   background grey
-//
-// p
-//   text-align center
-//   font-family helvetica
-//   font-size 18px
-//   padding 5px
+@import 'nib'
+@import 'rupture'
+
 
 
 .footer-wrapper
@@ -31,3 +15,5 @@
 .footer-content
     width 960px
     margin 0 auto
+    +below(960px)
+    	width 85%

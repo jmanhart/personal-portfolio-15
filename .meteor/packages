@@ -1,6 +1,6 @@
 standard-app-packages
-standard-minifiers
 iron:router
 danimal:tumblr
 jquery
 mquandalle:stylus
+standard-minifiers
