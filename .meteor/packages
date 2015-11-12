@@ -6,5 +6,10 @@ standard-minifiers
 meteorhacks:npm
 
 
-npm-container
+
 cosmos:browserify
+
+
+npm-container
+minimongo
+http

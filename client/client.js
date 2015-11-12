@@ -1,3 +1,4 @@
+
 var tumblr = require('tumblr.js');
 var client = tumblr.createClient({
       consumer_key: 'HibIRGJAg2t8P0eu1K9ndWIiJtMnoajtO2OkUa2wpoPLxF0fDC',
@@ -7,3 +8,8 @@ var client = tumblr.createClient({
 });
 
 
+client.blogInfo('jmanhart.tumblr.com', function (err, data) {
+    data.blogs.forEach(function (blog) {
+        console.log(blog.name);
+    });
+});
