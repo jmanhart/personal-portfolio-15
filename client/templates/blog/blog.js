@@ -1,5 +1,8 @@
-client.blogInfo('jmanhart.tumblr.com', function (err, data) {
-    data.blogs.forEach(function (blog) {
-        console.log(blog.name);
-    });
+Template.blog.helpers({
+
+    getTumblr: function getTumblr() {
+        if (Meteor.isClient) {
+            return Meteor.call('getTumblr');
+        }
+    }
 });

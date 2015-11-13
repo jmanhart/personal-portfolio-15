@@ -10,6 +10,8 @@ meteorhacks:npm
 cosmos:browserify
 
 
-npm-container
 minimongo
 http
+
+
+npm-container
