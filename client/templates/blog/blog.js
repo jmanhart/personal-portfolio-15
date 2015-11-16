@@ -22,6 +22,7 @@ Template.blog.helpers({
 		return Session.get('posts')
 	},
 	'dateFormatted':function(){
-		return moment(this.date).calendar()
+		var d = new Date (this.date)
+		return moment(d).calendar()
 	}
 })
