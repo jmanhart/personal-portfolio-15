@@ -4,7 +4,7 @@ jquery
 mquandalle:stylus
 standard-minifiers
 meteorhacks:npm
-
+momentjs:moment
 
 
 cosmos:browserify
@@ -12,6 +12,8 @@ cosmos:browserify
 
 minimongo
 http
+
+
 
 
 npm-container
