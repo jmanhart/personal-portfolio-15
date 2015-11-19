@@ -1,15 +1,16 @@
 <template name="blog">
   <div class="content-wrapper">
-    {{>blognav}}
-    <!--can include tumblr feed below or wherever using getTumblr and probably looping through posts with an {{each}}-->
-    <div id="posts">
-    {{#each posts}}
-    <h2>{{dateFormatted}}</h2>
-		{{#each photos}}
-			
-    	<img src="{{this.original_size.url}}"/>
-    	{{/each}}
-    {{/each}}
-	</div>
+    <div class="blog-posts">
+      {{#each posts}}
+        <div class="post">
+          <h3 class="post-title">{{dateFormatted}}</h3>
+      		{{#each photos}}
+          	<img src="{{this.original_size.url}}"/>
+          {{/each}}
+        </div>
+        <hr>
+      {{/each}}
+    </div>
+
   </div>
 </template>
