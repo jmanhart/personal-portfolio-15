@@ -1,15 +1,31 @@
 <template name="blog">
   <div class="content-wrapper">
     <div class="blog-posts">
+
       {{#each posts}}
+      <div class="post-wrapper">
         <div class="post">
-          <h3 class="post-title">{{dateFormatted}}</h3>
-      		{{#each photos}}
-          	<img src="{{this.original_size.url}}"/>
+          {{#each photos}}
+          <img src="{{this.original_size.url}}"/>
           {{/each}}
+
+            <div class="post-info-wrapper">
+              <h3 class="date">
+                {{dateFormatted}}
+              </h3>
+               <div class="tag-wrapper"> 
+                  {{#each tags}}               
+                      <span class="tags">
+                        #{{.this}}
+                      </span>
+                  {{/each}}
+              </div>
+            </div>
+          
         </div>
-        <hr>
+      </div>
       {{/each}}
+
     </div>
 
   </div>

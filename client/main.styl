@@ -14,7 +14,7 @@
 
 html body
   color #eee
-  background #ffffff
+  background-color rgb(244, 243, 242)
   height 100%
   zoom 95%
 
@@ -23,7 +23,7 @@ a
 
 
 .wrapper
-  height 1200px
+  height 100%
   padding-top 200px
   padding-bottom 200px
   margin 0 auto -4em
@@ -80,7 +80,11 @@ a
       col(1/2, gutter: 2, cycle: 2)
       height 300px
       box-sizing border-box
-      border 1px solid rgba(0, 0, 0, 0.2)
+      box-shadow: 0px 1px 1px 0px #dfdfdf;
+      background-color #ffffff
+      border-radius: 4px;
+      overflow: hidden;
+      // border 1px solid rgba(0, 0, 0, 0.2)
       position relative
       +below(768px)
           col(1/1, gutter: .5, cycle: 2)
