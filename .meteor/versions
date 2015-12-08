@@ -35,7 +35,9 @@ iron:location@1.0.11
 iron:middleware-stack@1.0.11
 iron:router@1.0.12
 iron:url@1.0.11
+jeremy:snapsvg@0.4.1_2
 jquery@1.11.4
+juliancwirko:s-image-box@0.2.0
 launch-screen@1.0.4
 livedata@1.0.15
 logging@1.0.8

@@ -1,15 +1,27 @@
+sImageBox.open('images/rtj.jpg', {
+    originalHeight: false, // image will be responsive you can enable original height
+    originalWidth: false, // image will be responsive you can enable original width
+    animation: '' //image entry animation (scale, fadeIn, zoomIn, slideInDown)
+});
 
-//var tumblr = require('tumblr.js');
-//var client = tumblr.createClient({
-//      consumer_key: 'HibIRGJAg2t8P0eu1K9ndWIiJtMnoajtO2OkUa2wpoPLxF0fDC',
-//  	  consumer_secret: 'zSNtn3fzLX4CfOApbXBRXrPVbcMUkm6WTXY1fHuyh35a43ExkS',
-//  	  token: 'CYtlvXzvWnGmNZrPgzpKRwQCrM1x99vspcRYUqbMBMybTzTPk1',
-//  	  token_secret: 'OVRdAxP5hPEKWm9gjev55LNxzMm9vjP28ShmelhGz7qDn3tK54'
-//});
-//
-//
-//client.blogInfo('jmanhart.tumblr.com', function (err, data) {
-//    data.blogs.forEach(function (blog) {
-//        console.log(blog.name);
-//    });
-//});
+
+Template.design.events({
+    'click .js-open-popup': function (e) {
+        var imgPath = $(e.currentTarget).data('image');
+        if (imgPath) {
+            sImageBox.open(imgPath, {
+                animation: 'zoomIn'
+            });
+        }
+    }
+});
+
+
+$(window).scroll(function() {
+if ($(this).scrollTop() > 1){
+    $('header').addClass("stick");
+  }
+  else{
+    $('header').removeClass("sticky");
+  }
+});

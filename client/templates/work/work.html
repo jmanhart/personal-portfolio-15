@@ -1,18 +1,30 @@
 <template name="work">
 	<div class="content-wrapper">
-		<section class="Home">
+		<header>
+    		{{>nav}}
+  		</header>
 
+		<section class="Home">
+			
 			<div class="HomeWrapper">
-				<div class="HomeBtn">
-					<p>DESIGN</p>
-				</div>
+				<a href="{{pathFor 'design'}}">
+					<div class="HomeBtn">
+						
+							<p>DESIGN</p>
+						
+					</div>
+				</a>
 			</div>
 
 
 			<div class="HomeWrapper">
-				<div class="HomeBtn">
-					<p>DEVELOPMENT</p>
-				</div>
+				<a href="{{pathFor 'dev'}}">
+					<div class="HomeBtn">
+						
+							<p>DEVELOPMENT</p>
+						
+					</div>
+				</a>
 			</div>
 
 <!--               <div class="HomeWrapper">

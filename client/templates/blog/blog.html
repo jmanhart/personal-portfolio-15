@@ -1,7 +1,10 @@
 <template name="blog">
   <div class="content-wrapper">
-    <div class="blog-posts">
+    <header>
+      {{>nav}}
+    </header>
 
+    <div class="blog-posts">
       {{#each posts}}
       <div class="post-wrapper">
         <div class="post">

@@ -5,15 +5,9 @@ mquandalle:stylus
 standard-minifiers
 meteorhacks:npm
 momentjs:moment
-
-
 cosmos:browserify
-
-
 minimongo
 http
-
-
-
-
 npm-container
+juliancwirko:s-image-box
+jeremy:snapsvg
