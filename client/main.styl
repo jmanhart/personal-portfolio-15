@@ -20,12 +20,80 @@ html body
 
 a
   text-decoration none
+  color #222
+  &:hover
+    text-decoration underline
+    color grey
 
 
-.wrapper
+h1
+  font-family 'Lato', sans-serif
+  font-weight 900
+  font-size 76px
+  line-height 85px
+  color black
+  text-align center
+  padding 1%
+  padding-bottom 3px
+  
+h2  
+  padding-bottom 3%
+  font-family 'Vollkorn', serif
+  font-weight 400
+  font-size 24px 
+  color black 
+  text-align center
+  padding-bottom 1%
+  
+h3
+  font-family 'Lato', sans-serif
+  font-weight 900
+  font-size 36px
+  line-height 100px
+  color black
+  text-align left
+  padding 1%
+  padding-bottom  5px
+  
+h4
+  font-family 'Vollkorn', serif
+  font-weight 400
+  font-style italic
+  font-size 28px
+  line-height 39px
+  color black
+  text-align left
+  padding 1%
+  padding-bottom  5px
+  
+p
+  font-family 'Vollkorn', serif
+  font-weight 400
+  font-size 22px
+  line-height 32px
+  color black
+  text-align left
+  padding 1%
+  padding-bottom  15px
+  letter-spacing 0.15px
+  
+hr
+  text-align center
+  margin 0 auto
+  max-width: 5em;
+  margin: 2em auto;
+  border-top-color: rgba(0,0,0,0.1);
+  
+.main-wrapper
   height 100%
-  padding-top 200px
-  padding-bottom 200px
+  padding-top 175px
+  padding-bottom 400px
+  margin 0 auto -4em
+  
+.home-wrapper
+  height 100%
+  padding-top 50px
+
   margin 0 auto -4em
 
 .content-wrapper
@@ -33,6 +101,9 @@ a
   margin 0 auto
   +below(960px)
     width 85%
+    
+.main-content
+  text-align center
 
 .nav-wrapper
   height 50px
@@ -78,7 +149,7 @@ a
   cf()
   .HomeWrapper
       col(1/2, gutter: 2, cycle: 2)
-      height 300px
+      height 100px
       box-sizing border-box
       box-shadow: 0px 1px 1px 0px #dfdfdf;
       background-color #ffffff
@@ -107,6 +178,11 @@ a
         color white
         
 
+
+#icon
+  width 18%
+  padding-left 30px
+  margin-bottom -30px
 
 
 
