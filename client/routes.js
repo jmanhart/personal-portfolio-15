@@ -36,3 +36,11 @@ Router.map(function() {
     template: 'dev'
   });
 });
+
+
+Router.map(function() {
+  this.route('coffee', {
+    path: '/coffee',
+    template: 'coffee'
+  });
+});

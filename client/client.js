@@ -25,3 +25,7 @@ if ($(this).scrollTop() > 1){
     $('header').removeClass("sticky");
   }
 });
+
+
+
+
