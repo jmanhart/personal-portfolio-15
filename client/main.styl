@@ -33,10 +33,10 @@ html body
 h1
   font-family 'Lato', sans-serif
   font-weight 900
-  font-size 76px
+  font-size 40px
   line-height 85px
   color black
-  text-align center
+  text-align left
   padding 1%
   padding-bottom 3px
   
@@ -55,9 +55,9 @@ h3
   font-size 36px
   line-height 26px
   color black
-  text-align left
+  text-align center
   padding 1%
-  padding-bottom  5px
+  padding-top 25%
   
 h4
   font-family 'Vollkorn', serif
@@ -66,9 +66,29 @@ h4
   font-size 28px
   line-height 39px
   color black
-  text-align left
+  text-align center
   padding 1%
   padding-bottom  5px
+  
+h5
+  font-family 'Lato', sans-serif
+  font-weight 900
+  font-size 50px
+  line-height 40px
+  color black
+  text-align center
+  padding 1%
+  padding-bottom 3px
+  
+h6
+  font-family 'Lato', sans-serif
+  font-weight 900
+  font-size 40px
+  line-height 45px
+  color black
+  text-align center
+  padding 1%
+  padding-bottom 3px
   
 p
   font-family 'Vollkorn', serif
@@ -90,29 +110,18 @@ hr
   
 .main-wrapper
   height 100%
-  padding-top 175px
+  padding-top 115px
   padding-bottom 400px
   margin 0 auto -4em
   
 .home-wrapper
   height 100%
   padding-top 50px
-
   margin 0 auto -4em
 
 .content-wrapper
   width 960px
   margin 0 auto
-  +below(960px)
-    width 85%
-    
-
-.dev-content-wrapper
-  width 960px
-  margin 0 auto
-  padding-bottom 15px
-  padding-top 2%
-  border-radius: 4px
   +below(960px)
     width 85%
     
@@ -124,7 +133,7 @@ hr
   width 960px
   margin 0 auto
   padding-bottom 15px
-
+  
 
 // Sub Navagation within the blog and work
 .SubNav
@@ -198,30 +207,9 @@ hr
   margin-bottom -30px
   
 
-.Dev
-  cf()
-  .DevWrapperLeft
-      col(1/2, gutter: 2, cycle: 2)
-      height 100%
-      box-sizing border-box
-      box-shadow: 0px 1px 1px 0px #dfdfdf;
-      background-color #ffffff
-      border-radius: 4px;
-      overflow: hidden;
-      position relative
-      padding 4%
-      +below(768px)
-          col(1/1, gutter: .5, cycle: 2)
-      .HomeBtn
-        position absolute
-        top 50%
-        left 50%
-        transform translate(-50%, -50%)
-        p
-          color black
-          font-family helvetica
-          text-align center
-          text-decoration none
+
+      
+
 
 
 
