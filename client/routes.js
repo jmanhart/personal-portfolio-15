@@ -37,5 +37,12 @@ Router.map(function() {
   });
 });
 
+Router.map(function() {
+  this.route('home2', {
+    path: '/work/home2',
+    template: 'home2'
+  });
+});
+
 
 
