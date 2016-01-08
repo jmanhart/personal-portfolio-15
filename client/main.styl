@@ -44,7 +44,7 @@ h2
   padding-bottom 3%
   font-family 'Vollkorn', serif
   font-weight 400
-  font-size 24px 
+  font-size 36px 
   color black 
   text-align center
   padding-bottom 1%
@@ -57,7 +57,7 @@ h3
   color black
   text-align center
   padding 1%
-  padding-top 25%
+  // padding-top 25%
   
 h4
   font-family 'Vollkorn', serif
@@ -83,8 +83,8 @@ h5
 h6
   font-family 'Lato', sans-serif
   font-weight 900
-  font-size 40px
-  line-height 45px
+  font-size 100px
+  line-height 130px
   color black
   text-align center
   padding 1%
@@ -113,12 +113,9 @@ hr
   padding-top 115px
   padding-bottom 400px
   margin 0 auto -4em
+  +below(660px)
+    padding-top 145px
   
-.home-wrapper
-  height 100%
-  padding-top 50px
-  margin 0 auto -4em
-
 .content-wrapper
   width 960px
   margin 0 auto
@@ -126,6 +123,7 @@ hr
     width 85%
     
 .main-content
+  
   text-align center
 
 .nav-wrapper
@@ -133,6 +131,36 @@ hr
   width 960px
   margin 0 auto
   padding-bottom 15px
+  
+//Home Page Styles
+
+.HomeWrapper
+  display flex
+  align-items: center;
+  justify-content: center;
+  padding 3% 
+  .HomeContent
+      align-items: flex-end;
+      justify-content: center;
+  
+    
+.SocialIcons
+  text-align center
+  height 100%
+  
+#icon
+  width 40%
+  padding-left 30%
+  margin-bottom -30px
+  
+.fa
+  padding 20px 25px 10px 25px
+  color #222
+  &:hover
+    color grey
+    
+.fa-2x 
+    font-size: 3em;
   
 
 // Sub Navagation within the blog and work
@@ -201,10 +229,7 @@ hr
         color white
 
 
-#icon
-  width 18%
-  padding-left 30px
-  margin-bottom -30px
+
   
 
 
