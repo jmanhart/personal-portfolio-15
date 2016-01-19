@@ -24,13 +24,6 @@ Router.map(function() {
 });
 
 Router.map(function() {
-  this.route('design', {
-    path: '/work/design',
-    template: 'design'
-  });
-});
-
-Router.map(function() {
   this.route('dev', {
     path: '/work/dev',
     template: 'dev'
@@ -43,6 +36,49 @@ Router.map(function() {
     template: 'home2'
   });
 });
+
+Router.map(function() {
+  this.route('about', {
+    path: '/about',
+    template: 'about'
+  });
+});
+
+Router.map(function() {
+  this.route('bush', {
+    path: '/work/bush',
+    template: 'bush'
+  });
+});
+
+Router.map(function() {
+  this.route('sbx', {
+    path: '/work/sbx',
+    template: 'sbx'
+  });
+});
+
+Router.map(function() {
+  this.route('sgfc', {
+    path: '/work/sgfc',
+    template: 'sgfc'
+  });
+});
+
+Router.map(function() {
+  this.route('cobb', {
+    path: '/work/cobb',
+    template: 'cobb'
+  });
+});
+
+Router.map(function() {
+  this.route('uni', {
+    path: '/work/uni',
+    template: 'uni'
+  });
+});
+
 
 
 
