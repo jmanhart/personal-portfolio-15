@@ -1,52 +1,60 @@
 <template name="coffee">
-<div id="coffee-wrapper">
-<!--   <div class="content-wrapper">
-    {{>gifSearch}}
-  </div> -->
 
-        {{#each tasks}}
-        {{> task}}
-      {{/each}}
 
-  <div class="coffee-wrapper">
-    <div class="dev-content-wrapper">
-      <section class="Dev">
-        <div class="DevWrapperLeft">
-          <article>
-            <i id="coffee" class="fa fa-star fa-2x"></i>
-            <i id="coffee" class="fa fa-star fa-2x"></i>
-            <i id="coffee" class="fa fa-star fa-2x"></i>
-            <i id="coffee" class="fa fa-star fa-2x"></i>
-            <i id="coffee" class="fa fa-star-o fa-2x"></i>
-            <h3>The Coffee Ethic</h3>
-              <h4>
-                Springfield, Missouri
-              </h4> 
-              <p>
-                Paleo wayfarers butcher, heirloom helvetica shoreditch farm-to-table squid. Godard +1 sriracha.
-              </p>
-          </article>
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<!-- <div id="bottom"></div> -->
+
+  <div class="main-wrapper">
+    <header>
+      {{>nav}}
+    </header>
+
+    {{>grid}}
+<div class="ProjectWrapper">
+    <div class="ProjectContentWrapper">
+      <div class="ProjectContent">
+        <div class="ProjectHead">
+          <h6>Cobb</h6>
+          <h4>Web & Print Design / at Marlin</h4> 
         </div>
-
-        <div class="DevWrapperLeft">
-          <article>
-            <i id="coffee" class="fa fa-star fa-2x"></i>
-            <i id="coffee" class="fa fa-star fa-2x"></i>
-            <i id="coffee" class="fa fa-star fa-2x"></i>
-            <i id="coffee" class="fa fa-star fa-2x"></i>
-            <i id="coffee" class="fa fa-star-o fa-2x"></i>
-            <h3>Brick & Mortar</h3>
-              <h4>
-                Springfield, Missouri
-              </h4> 
-              <p>
-                Paleo wayfarers butcher, heirloom helvetica shoreditch farm-to-table squid. Godard +1 sriracha.
-              </p>
-          </article>
+        <div class="ProjectLeadCopy">
+          <p>
+            Street art kinfolk fashion axe, jean shorts keffiyeh venmo actually. Chillwave iPhone blue bottle, butcher tumblr next.
+          </p>
         </div>
-      </section>
-     </div>
+      </div>
+      <hr>
 
-   </div>
-</div>
+      <div class="ProjectBand">
+        <h6 class="label">Proj 01 Emails</h6>
+      </div>
+
+      <hr>
+
+
+      <div class="ProjectBand">
+        <h6 class="label">Proj 02 Digi-iCup</h6>
+      </div>
+
+      <hr>
+            <div class="ProjectBand">
+        <h6 class="label">Proj 03 Delta Coupon</h6>
+      </div>
+
+      <hr>
+
+            <div class="ProjectBand">
+        <h6 class="label">Proj 04 Gift Card</h6>
+      </div>
+
+      <hr>
+
+
+
+    </div>
+  </div>
+
+  </div>
 </template>

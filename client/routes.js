@@ -80,5 +80,12 @@ Router.map(function() {
 });
 
 
+Router.map(function() {
+  this.route('coffee', {
+    path: '/coffee',
+    template: 'coffee'
+  });
+});
+
 
 
