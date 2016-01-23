@@ -29,9 +29,12 @@
     height: 15px;
     }
     #top { top: 0; }
-    #bottom { bottom: 0; }
-    
-// Black Bars End
+    #bottom { bottom: 0; }   
+// BLACK Bars END
+
+
+
+
 
 html body
   color #eee 
@@ -45,14 +48,6 @@ html body
   margin:0;
   display: flex;
   flex-direction: column;
-
-
-.subhead
-  text-decoration none
-  color #222
-  &:hover
-    text-decoration underline
-    color grey
 
 h1
   font-family 'Lato', sans-serif
@@ -133,12 +128,11 @@ hr
   // max-width: 5em;
   border-top-color: rgba(0,0,0,0.1);
   
-// Navagation bar  JM      Blog
-.nav-top
-  width 960px
-  margin 0 auto
-  +below(960px)
-    width 85%
+
+
+
+//////////////////////////////////////////////////// 
+// NAV START
 
 header
   width 100%
@@ -157,9 +151,8 @@ header
   transition height 0.3s
   +below(768px)
     background rgba(255,255,255,.95)
-// MAIN
 
-.navigation 
+.Nav
   list-style none
   margin 0 
   width 100%
@@ -174,137 +167,45 @@ header
   //   h1, p
   //     color #ffffff
   
-.navigation li:first-child
+.Nav li:first-child
   margin-right auto
   padding 10px 0px 0px 30px
 
-.navigation li:last-child 
+.Nav li:last-child 
   padding-right 50px
 
-.navigation a
+.Nav a
   text-decoration none
   display block
   padding 1em
   color white
   
+////////////////////////////////////////////////////
+
+
+
+////////////////////////////////////////////////////
+//Home STYLES
+
 .IntroWrapper
   height 900px
   
-// Nav bar end
-
-
-.main-wrapper
-  height 100%
-  padding-top 101px
-  padding-bottom 400px
-  margin 0 auto -4em
-  display flex
-  +below(660px)
-    padding-top 145px
-  
-.content-wrapper
-  width 960px
-  margin 0 auto
-  +below(960px)
-    width 85%
-    
-.main-content
-  
-  text-align center
-
-.nav-wrapper
-  height 50px
-  width 960px
-  margin 0 auto
-  padding-bottom 15px
-  
-
-    
-.SocialIcons
-  text-align center
-  height 100%
-  
-#icon
-  width 40%
-  padding-left 30%
-  margin-bottom -30px
-  
-.fa
-  padding 20px 25px 10px 25px
+.IntroText
+  text-decoration none
   color #222
   &:hover
+    text-decoration underline
     color grey
-    
-.fa-2x 
-    font-size: 3em;
   
-// COFFEE
+////////////////////////////////////////////////////
+  
 
-.ProjNav
-  width 100%
-  height 100px
-  // overflow hidden
-  margin-top  -400px   //THIS
-  position fixed
-  // top 0
-  left 0
-  z-index -1
-  -webkit-transition height 0.3s
-  -moz-transition height 0.3s
-  -ms-transition height 0.3s
-  -o-transition height 0.3s
-  transition height 0.3s
-
-.ProjNav h1#logo
-  display inline-block
-  height 90px
-  line-height 90px
-  float left
-  -webkit-transition all 0.3s
-  -moz-transition all 0.3s
-  -ms-transition all 0.3s
-  -o-transition all 0.3s
-  transition all 0.3s
-  visibility visible
-
-.ProjNav nav
-  display inline-block
-  float right
-
-.ProjNav nav a
-  line-height 110px
-  margin-left 20px
-  text-transform uppercase
-  color #000
-  font-size 18px
-  font-family 'Lato', sans-serif
-  font-weight 400
-  text-decoration none
-  transition all 0.3s
-
-.ProjNav nav a:hover
-  color grey
+  
+  
 
 
-@media all and (max-width: 660px)
-  .ProjNav h1#logo
-      display block
-      float none
-      margin 0 auto
-      height 100px
-      line-height 100px
-      text-align center
-
-  .ProjNav nav
-      display block
-      float none
-      height 50px
-      text-align center
-      margin 0 auto
-
-  .ProjNav nav a
-      line-height 50px
-      margin 0 10px
+////////////////////////////////////////////////////
+// BUSH STYLES 
 
 .LogoWrap
   height 900px
@@ -313,5 +214,7 @@ header
   background-color grey
   justify-content center
   
+
+////////////////////////////////////////////////////
 
 

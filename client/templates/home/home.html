@@ -9,25 +9,22 @@
     <div class="dude">
 <!-- Content for Project -->
         <header>
-          {{>nav}}
+          {{>navigation}}
         </header>
         <div class="IntroWrapper">
           <div class="IntroContent">
               <h6>manhart</h6> <br>
               <h2>
-                <a class="subhead" href="{{pathFor 'work'}}">Designer</a>, 
-                <a class="subhead" href="{{pathFor 'work'}}">Developer</a> and 
-                <a class="subhead" href="{{pathFor 'blog'}}">other things</a>.
+                <a class="IntroText" href="{{pathFor 'work'}}">Designer</a>, 
+                <a class="IntroText" href="{{pathFor 'work'}}">Developer</a> and 
+                <a class="IntroText" href="{{pathFor 'blog'}}">other things</a>.
               </h2>
             </div>
         </div>
 
-   
-                <div class="main-wrapper">
+        <div class="MainWrapper">
                 {{>grid}}
-                </div>
-            </div>
-
-
+        </div>
+    </div>
 
 </template>
