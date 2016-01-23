@@ -46,7 +46,7 @@ Router.map(function() {
 
 Router.map(function() {
   this.route('bush', {
-    path: '/work/bush',
+    path: '/bush',
     template: 'bush'
   });
 });
@@ -79,13 +79,14 @@ Router.map(function() {
   });
 });
 
-
 Router.map(function() {
   this.route('coffee', {
     path: '/coffee',
     template: 'coffee'
   });
 });
+
+
 
 
 

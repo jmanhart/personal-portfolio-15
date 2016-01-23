@@ -1,43 +1,33 @@
 <template name="home">
-  	<div class="HomeWrapper">
 
-        <div class="HomeContent">
-  	
-            <img id="icon" src="images/bike.svg">
-	           <h6>manhart</h6>
-	           <h2>
-                    <a class="subhead" href="{{pathFor 'work'}}">Designer</a>, 
-                    <a class="subhead" href="{{pathFor 'work'}}">Developer</a> and 
-                    <a class="subhead" href="{{pathFor 'blog'}}">other things</a>.
-                </h2>
+  <div id="left"></div>
+  <div id="right"></div>
+  <div id="top"></div>
+  <!-- <div id="bottom"></div> -->
 
-        	<div class="SocialIcons">
 
-        		
-        		<a class="icon" href="https://github.com/jmanhart">
-        			<i class="fa fa-fw fa-github-square fa-2x"></i>
-        		</a>
-
-        
-        		<a class="icon" href="https://bitbucket.org/jmanhart/">
-                    <i class="fa fa-bitbucket-square fa-2x"></i>
-        		</a>
-
-        	
-        		<a class="icon" href="https://twitter.com/JohnManhart">
-                    <i class="fa fa-fw fa-linkedin-square fa-2x"></i>
-        		</a>
-
-        	
-        		<a class="icon" href="https://www.instagram.com/johnmanhart/">
-        			<i class="fa fa-twitter-square fa-2x"></i>
-        		</a>
-
-        	</div>
-
+    <div class="dude">
+<!-- Content for Project -->
+        <header>
+          {{>nav}}
+        </header>
+        <div class="IntroWrapper">
+          <div class="IntroContent">
+              <h6>manhart</h6> <br>
+              <h2>
+                <a class="subhead" href="{{pathFor 'work'}}">Designer</a>, 
+                <a class="subhead" href="{{pathFor 'work'}}">Developer</a> and 
+                <a class="subhead" href="{{pathFor 'blog'}}">other things</a>.
+              </h2>
+            </div>
         </div>
 
+   
+                <div class="main-wrapper">
+                {{>grid}}
+                </div>
+            </div>
 
 
-    </div>
+
 </template>
