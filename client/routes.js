@@ -26,6 +26,13 @@ Router.map(function() {
   });
 });
 
+Router.map(function() {
+  this.route('blog', {
+    path: '/blog',
+    template: 'blog'
+  });
+});
+
 
 
 

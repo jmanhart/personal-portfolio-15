@@ -1,62 +1,25 @@
 <template name="bush">
-{{>bars}}
+
+<div class="left" id="bush"></div>
+<div class="right" id="bush"></div>
+<div class="top" id="bush"></div>
+
   <div class="dude">
       <header>
-      {{>navigation}}
-    </header>
+      	{{>navigation}}
+      </header>
 
- 
-    <div class="LogoWrap">
-            <div class="fix">
+    <div class="fix">
       {{>computer}}
     </div>
-    </div>
-
+    
+      <div class="ProjectWrapper">
+        <div class="ProjectContentWrapper">
+        {{> grid}}
+        </div>
+      </div>
  
 
-  <div class="ProjectWrapper">
-    <div class="ProjectContentWrapper">
-      <div class="ProjectContent">
-        
-        <div class="ProjectHead">
-          <h6>Bush's</h6>
-          <h4>Web & Print Design / at Marlin</h4> 
-        </div>
-        <div class="ProjectLeadCopy">
-          <p>
-            Street art kinfolk fashion axe, jean shorts keffiyeh venmo actually. Chillwave iPhone blue bottle, butcher tumblr next.
-          </p>
-        </div>
-      </div>
-      <hr>
-
-      <div class="ProjectBand">
-        <h6 class="label">Proj 01 Emails</h6>
-      </div>
-
-      <hr>
-
-
-      <div class="ProjectBand">
-        <h6 class="label">Proj 02 Digi-iCup</h6>
-      </div>
-
-      <hr>
-            <div class="ProjectBand">
-        <h6 class="label">Proj 03 Delta Coupon</h6>
-      </div>
-
-      <hr>
-
-            <div class="ProjectBand">
-        <h6 class="label">Proj 04 Gift Card</h6>
-      </div>
-
-      <hr>
-
-
-
-    </div>
-  </div>
+  
 </div>
 </template>

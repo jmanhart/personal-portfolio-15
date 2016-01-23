@@ -1,8 +1,8 @@
 <template name="blog">
-  <div class="main-wrapper">
-  <div class="content-wrapper">
-    <header>
-      {{>nav}}
+  {{>bars}}
+   <div class="dude">
+      <header>
+      {{>navigation}}
     </header>
 
     <div class="blog-posts">
@@ -13,7 +13,7 @@
           <img src="{{this.original_size.url}}"/>
           {{/each}}
 
-            <div class="post-info-wrapper">
+           <!--  <div class="post-info-wrapper">
               <h3 class="date">
                 {{dateFormatted}}
               </h3>
@@ -24,7 +24,7 @@
                       </span>
                   {{/each}}
               </div>
-            </div>
+            </div> -->
           
         </div>
       </div>
@@ -32,6 +32,5 @@
 
     </div>
 
-  </div>
 </div>
 </template>
