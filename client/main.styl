@@ -163,22 +163,21 @@ header
   display flex
   align-items center
   -webkit-flex-flow wrap
+  justify-content space-between
   // +below(768px)
   //   h1, p
   //     color #ffffff
+  li
+    padding 10px 0px 0px 30px
+  a
+    text-decoration none
+    display block
+    padding 1em
+    color white
+    
+.Nav li:last-child
+  padding 10px 40px 0px 30px
   
-.Nav li:first-child
-  margin-right auto
-  padding 10px 0px 0px 30px
-
-.Nav li:last-child 
-  padding-right 50px
-
-.Nav a
-  text-decoration none
-  display block
-  padding 1em
-  color white
   
 ////////////////////////////////////////////////////
 
@@ -202,12 +201,23 @@ header
   display flex
   justify-content center
   
+  
 .IntroText
   text-decoration none
   color #222
   &:hover
     text-decoration underline
     color grey
+    
+#MovingNav 
+  width 75%
+  display flex
+  align-items flex-end
+  margin 0 auto
+  #MovingList
+    padding-top 25px
+    li
+      padding 10px 0px 0px 7px
   
 ////////////////////////////////////////////////////
   

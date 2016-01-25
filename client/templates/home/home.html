@@ -5,6 +5,13 @@
       {{>navigation}}
     </header>
 
+<!--   <div class="header" id="MovingNav">
+      <ul class="Nav" id="MovingList">
+        <li><a href="{{pathFor 'blog'}}"><h5>About</h5></a></li>
+        <li><a href="{{pathFor 'blog'}}"><h5>Blog</h5></a></li>
+        <li><a href="{{pathFor 'blog'}}"><h5>Contact</h5></a></li>
+      </ul>
+  </div> -->
  
     
      <div class="IntroWrapper">
@@ -18,13 +25,17 @@
           </h2>
         </div>
       </div>
-  <hr>
+ 
+      <div class="ProjectWrapper">
+        <div class="ProjectContentWrapper">
+        {{> bands02}}
+        </div>
+      </div>
       <div class="ProjectWrapper">
         <div class="ProjectContentWrapper">
         {{> bands}}
         </div>
       </div>
-
 </template>
 
 
