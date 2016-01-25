@@ -27,7 +27,7 @@
       </div>
     </div>
   </section>
-  <hr>
+ 
 </template>
 
 <!--                      -->
@@ -40,16 +40,25 @@
   <div class="top" id="bush"></div>
  <!--  <div class="dude" id="bush"> -->
       <header>
-      	{{>navigation}}
+      	  <div class="header">
+              <ul class="Nav">
+                <li><a href="{{pathFor 'home'}}"><h3 style="color:white;">jm</h3></a></li>
+                <li><a href="{{pathFor 'blog'}}"><h5 style="color:white;">ABOUT</h5></a></li>
+                <!-- <li><a href="#"><p>Home</p></a></li>
+                <li><a href="#"><p>Home</p></a></li>
+                <li><a href="#"><p>Home</p></a></li> -->
+              </ul>
+          </div>
       </header>
-
-      <!--   <div class="header" id="MovingNav">
+<!-- <header id="MovingNav">
+  <div class="header" id="MovingNav">
       <ul class="Nav" id="MovingList">
         <li><a href="{{pathFor 'blog'}}"><h5>About</h5></a></li>
         <li><a href="{{pathFor 'blog'}}"><h5>Blog</h5></a></li>
         <li><a href="{{pathFor 'blog'}}"><h5>Contact</h5></a></li>
       </ul>
-  </div> -->
+  </div>
+  </header> -->
 <!-- 
     <div class="fix">
       {{>bushbreakcomp}}
@@ -64,19 +73,19 @@
         <div class="ProjectContentWrapper">
           <div class="ProjectLogo">
             <img class="WorkImage" src="../images/projects/cobb-logo.png">
-            <img class="WorkImage" src="../images/projects/marlin-logo.png">
+            <img class="WorkImage" id="MarlinLogo" src="../images/projects/marlin-logo.png">
           </div>
           <div class="ProjectIntro">
-            <h3>Marlin</h3>
-            <p><a href="http://www.bushbeansfoodservice.com/blog/breakfast">www.bushbeansfoodservice.com/</a></p>
+            <p>RetailMeNot is an Austin-based company that operates the world’s largest marketplace for digital offers. We worked with the product team on prototyping, overhauling visuals, and creating web-based responsive components.</p>
           </div>
 
         
-        {{> bands02}}
+    {{> bands02}}
         </div>
       </div>
 
 </template>
+
 
 <!--                      -->
 <!--  BUSHBREAKFAST COMP  -->
