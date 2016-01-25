@@ -1,0 +1,85 @@
+<!--                      -->
+<!--  BUSHBREAKFAST BAND  -->
+<!--                      -->
+
+<template name="bushbreakfast">
+  <section class="Band">
+    <div class="BandLeft BushCoBrandBandLeftClip" id="BushCoBrandBandLeft">
+      <div class="BandWrapper">
+
+      </div>
+    </div>
+    <div class="BandRight">
+      <div class="BandWrapper">
+
+        <h3 class="LabelHeader">
+          Bush's Best Breakfast
+        </h3>
+        <p class="LabelCopy"> 
+          What if all the creative talent of an agency went into developing brands of their own?
+        </p>
+        <div class="Bandbutton">
+          <a href="{{pathFor 'bushbreak'}}">
+            <h5> See More</h5>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <hr>
+</template>
+
+<!--                      -->
+<!--  BUSHBREAKFAST PAGE  -->
+<!--                      -->
+
+<template name="bushbreak">
+  {{>bars}}
+  <div class="dude">
+      <header>
+      	{{>navigation}}
+      </header>
+
+    <div class="fix">
+      {{>bushbreakcomp}}
+    </div>
+    
+      <div class="ProjectWrapper">
+        <div class="ProjectContentWrapper">
+          <div class="ProjectLogo">
+            <img class="Logo" src="../images/projects/bush-logo-color.png">
+          </div>
+          <div class="ProjectIntro">
+            <h3>Marlin</h3>
+            <p><a href="http://www.bushbeansfoodservice.com/blog/breakfast">www.bushbeansfoodservice.com/</a></p>
+          </div>
+
+        
+        {{> grid}}
+        </div>
+      </div>
+</div>
+</template>
+
+<!--                      -->
+<!--  BUSHBREAKFAST COMP  -->
+<!--                      -->
+
+<template name="bushbreakcomp">
+
+  <div class="ProjectContent">
+
+          <div class="Computer">
+                <img id="Comp" src="../images/desk.png">
+               <div class="stuff"> 
+                  <video class="ScreenClip" src="../videos/bush-break.mp4" autoplay>
+                    Your browser does not support the <code>video</code> element.
+                  </video>
+                </div>
+
+          </div>
+
+  </div>
+
+</template>

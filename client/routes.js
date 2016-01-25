@@ -33,6 +33,20 @@ Router.map(function() {
   });
 });
 
+Router.map(function() {
+  this.route('bushbreak', {
+    path: '/bushbreak',
+    template: 'bushbreak'
+  });
+});
+
+Router.map(function() {
+  this.route('bushco', {
+    path: '/bushco',
+    template: 'bushco'
+  });
+});
+
 
 
 

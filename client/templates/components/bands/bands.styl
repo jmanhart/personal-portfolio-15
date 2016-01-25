@@ -1,0 +1,126 @@
+@import 'rupture'
+@import 'nib'
+@import 'jeet'
+
+//////////////////////////////////////////////////// 
+// Band
+
+.Band
+  width 75%
+  height 400px
+  margin 0 auto
+  border-radius: 4px
+  display flex
+  flex-wrap wrap
+  +below(960px)
+    col(1/1, cycle: 1)
+    width 80%
+  cf()
+  .BandLeft, .BandRight
+      col(1/2, gutter: 2, cycle: 2)
+      display: flex;
+      flex-direction column
+      flex-wrap wrap
+      align-items: center;
+      justify-content: center;
+      height 100%
+      box-sizing border-box
+      padding 4% 0% 4% 4%
+      .BandWrapper
+        width 100%
+        a
+            text-decoration none
+        .LabelHeader
+          width 100%
+          font-size 35px
+          text-align left
+        .LabelCopy
+          width 100%
+          font-size 25px
+          padding-bottom 8%
+        .Bandbutton
+          width 50%
+          height 50px
+          border: 5px solid #000;
+          display flex
+          justify-content center
+          align-items center
+          text-decoration none
+          -webkit-transition:all 0.2s ease-out;
+          -moz-transition:all 0.2s ease-out;
+          -ms-transition:all 0.2s ease-out;
+          -o-transition:all 0.2s ease-out;
+          transition:all 0.2s ease-out;
+          a
+            text-decoration none
+        .Bandbutton:hover
+          width 60%
+          height 50px
+          border: 5px solid #000;
+          display flex
+          justify-content center
+          align-items center
+          background-color #F8F8F8
+
+        +below(400px)
+            col(1/1, gutter: 2, cycle: 1)
+            
+.BushCoBrandBandLeftClip 
+  clip-path circle(40% at 50% 50%);
+  display flex
+  justify-content center
+  height auto
+  -webkit-transition:all 0.2s ease-out;
+  -moz-transition:all 0.2s ease-out;
+  -ms-transition:all 0.2s ease-out;
+  -o-transition:all 0.2s ease-out;
+  transition:all 0.2s ease-out;
+      
+  
+.BandOutterWrapper
+  height 100%
+  width 100%
+.BandOutterWrapper:hover
+  background-color rgba(112, 112, 112, 0.15)
+  transition: background-color .2s;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: initial;
+  transition-delay: initial;
+  .BushCoBrandBandLeftClip 
+    clip-path circle(41% at 50% 50%);
+    display flex
+    justify-content center
+    height auto
+    -webkit-transform: scale(101%) ease-out;
+    -ms-transform: scale(101%) ease-out;
+    transform: scale(101%) ease-out;
+    transition: all 0.3s ease-out;
+  
+//////////////////////////////////////////////////// 
+
+
+
+
+//////////////////////////////////////////////////// 
+// BAND 01 --- BUSH CO-Brand
+
+#BushCoBrandBandLeft
+    background: url("images/rtj.jpg") no-repeat center; 
+    background-size: cover;
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
