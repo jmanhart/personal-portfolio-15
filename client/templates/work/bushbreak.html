@@ -35,20 +35,36 @@
 <!--                      -->
 
 <template name="bushbreak">
-  {{>bars}}
-  <div class="dude">
+  <div class="left" id="bush"></div>
+  <div class="right" id="bush"></div>
+  <div class="top" id="bush"></div>
+ <!--  <div class="dude" id="bush"> -->
       <header>
       	{{>navigation}}
       </header>
 
+      <!--   <div class="header" id="MovingNav">
+      <ul class="Nav" id="MovingList">
+        <li><a href="{{pathFor 'blog'}}"><h5>About</h5></a></li>
+        <li><a href="{{pathFor 'blog'}}"><h5>Blog</h5></a></li>
+        <li><a href="{{pathFor 'blog'}}"><h5>Contact</h5></a></li>
+      </ul>
+  </div> -->
+<!-- 
     <div class="fix">
       {{>bushbreakcomp}}
-    </div>
+    </div> -->
+       <div class="IntroWrapper Work">
+   
+          <img class="WorkImage" src="images/cobb-trio.png"/>
+
+      </div>
     
       <div class="ProjectWrapper">
         <div class="ProjectContentWrapper">
           <div class="ProjectLogo">
-            <img class="Logo" src="../images/projects/bush-logo-color.png">
+            <img class="WorkImage" src="../images/projects/cobb-logo.png">
+            <img class="WorkImage" src="../images/projects/marlin-logo.png">
           </div>
           <div class="ProjectIntro">
             <h3>Marlin</h3>
@@ -56,10 +72,10 @@
           </div>
 
         
-        {{> grid}}
+        {{> bands02}}
         </div>
       </div>
-</div>
+
 </template>
 
 <!--                      -->
