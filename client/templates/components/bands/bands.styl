@@ -2,82 +2,65 @@
 @import 'nib'
 @import 'jeet'
 
-//////////////////////////////////////////////////// 
-// Band
+/////////////////////////////////////////
+// BAND 1 column
 
-.Band
+.OneColBand
+  cf()
   width 75%
   max-width 1200px
-  height 400px
-  margin 0 auto
-  border-radius: 4px
-  display flex
-  flex-wrap wrap
-  +below(960px)
-    col(1/1, cycle: 1)
-    width 80%
-  cf()
-  .BandLeft, .BandRight
-      col(1/2, gutter: 2, cycle: 2)
-      display: flex;
-      flex-direction column
-      flex-wrap wrap
-      align-items: center;
-      justify-content: center;
-      height 100%
-      box-sizing border-box
-      padding 4% 0% 4% 4%
-      .BandWrapper
-        width 100%
-        a
-            text-decoration none
-        .LabelHeader
-          width 100%
-          font-size 35px
-          text-align left
-        .LabelCopy
-          width 100%
-          font-size 25px
-          padding-bottom 8%
-        .Bandbutton
-          width 50%
-          height 50px
-          border: 5px solid #000;
-          display flex
-          justify-content center
-          align-items center
-          text-decoration none
-          -webkit-transition:all 0.2s ease-out;
-          -moz-transition:all 0.2s ease-out;
-          -ms-transition:all 0.2s ease-out;
-          -o-transition:all 0.2s ease-out;
-          transition:all 0.2s ease-out;
-          a
-            text-decoration none
-        .Bandbutton:hover
-          width 60%
-          height 50px
-          border: 5px solid #000;
-          display flex
-          justify-content center
-          align-items center
-          background-color #F8F8F8
-
-        +below(400px)
-            col(1/1, gutter: 2, cycle: 1)
-            
-.BushCoBrandBandLeftClip 
-  clip-path circle(40% at 50% 50%);
   display flex
   justify-content center
-  height auto
-  -webkit-transition:all 0.2s ease-out;
-  -moz-transition:all 0.2s ease-out;
-  -ms-transition:all 0.2s ease-out;
-  -o-transition:all 0.2s ease-out;
-  transition:all 0.2s ease-out;
+  margin 0 auto
+  +below(600px)
+    flex-wrap wrap   
+  .BandSingle
+    col(1/2, gutter: 2, cycle: 2)
+    width 100%
+    height 350px
+    padding 0% 3% 0% 3%
+    display flex
+    flex-wrap wrap
+    align-items center
+    flex-direction column
+    justify-content center
+    margin-right 0%
+    h3
+      text-align left
+    p
+      padding 0% 0% 6% 0%
+      line-height 30px
+      font-size 22px
+    a 
+      width 100%
+      text-decoration none
+      display flex
+      justify-content center
+      align-items center
+    img
+      width 65%
+    +below(600px)
+      margin-right 0% 
+    .BandbuttonSingle
+      width 50%
+      height 50px
+      // min-width 30%
+      border 5px solid #000
+      display flex
+      justify-content center
+      align-items center
+      text-decoration none
+      -webkit-transition all 0.2s ease-out
+      -moz-transition all 0.2s ease-out
+      -ms-transition all 0.2s ease-out
+      -o-transition all 0.2s ease-out
+      transition all 0.2s ease-out
+    .BandbuttonSingle:hover
+      width 60%
+      height 50px
+      border 5px solid #000
+      background-color #F8F8F8
       
-  
 .BandOutterWrapper
   height 100%
   width 100%
@@ -88,40 +71,79 @@
   transition-duration: 0.2s;
   transition-timing-function: initial;
   transition-delay: initial;
-  .BushCoBrandBandLeftClip 
-    clip-path circle(41% at 50% 50%);
+
+/////////////////////////////////////////
+// BAND 2 column
+
+.TwoColBand
+  cf()
+  width 75%
+  max-width 1200px
+  display flex
+  justify-content center
+  margin 0 auto
+  +below(600px)
+    flex-wrap wrap
+  .Band-Left
+    col(1/2, gutter: 2, cycle: 2)
+    width 100%
+    height 350px
     display flex
+    align-items center
     justify-content center
-    height auto
-    -webkit-transform: scale(101%) ease-out;
-    -ms-transform: scale(101%) ease-out;
-    transform: scale(101%) ease-out;
-    transition: all 0.3s ease-out;
-  
-//////////////////////////////////////////////////// 
+    img
+      width 65%
+    +below(600px)
+      margin-right 0%   
+  .Band-Right
+    col(1/2, gutter: 2, cycle: 2)
+    width 100%
+    height 350px
+    padding 0% 3% 0% 3%
+    display flex
+    flex-wrap wrap
+    align-items flex-start
+    flex-direction column
+    justify-content center
+    h3
+      text-align left
+    p
+      padding 0% 0% 6% 0%
+      line-height 30px
+      font-size 22px
+    a 
+      width 100%
+      text-decoration none
+    .Bandbutton
+      width 50%
+      height 50px
+      // min-width 30%
+      border 5px solid #000
+      display flex
+      justify-content center
+      align-items center
+      text-decoration none
+      -webkit-transition all 0.2s ease-out
+      -moz-transition all 0.2s ease-out
+      -ms-transition all 0.2s ease-out
+      -o-transition all 0.2s ease-out
+      transition all 0.2s ease-out
+    .Bandbutton:hover
+      width 60%
+      height 50px
+      border 5px solid #000
+      background-color #F8F8F8
+      
+.BandOutterWrapper
+  height 100%
+  width 100%
+.BandOutterWrapper:hover
+  background-color rgba(112, 112, 112, 0.15)
+  transition: background-color .2s;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: initial;
+  transition-delay: initial;
 
-
-
-
-//////////////////////////////////////////////////// 
-// BAND 01 --- BUSH CO-Brand
-
-#BushCoBrandBandLeft
-    background: url("images/rtj.jpg") no-repeat center; 
-    background-size: cover;
+/////////////////////////////////////////
    
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-

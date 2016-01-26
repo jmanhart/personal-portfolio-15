@@ -34,20 +34,48 @@ Router.map(function() {
 });
 
 Router.map(function() {
-  this.route('bushbreak', {
-    path: '/bushbreak',
-    template: 'bushbreak'
+  this.route('bushbfpage', {
+    path: '/bushbfpage',
+    template: 'bushbfpage'
     
   });
 });
 
 Router.map(function() {
-  this.route('bushco', {
-    path: '/bushco',
-    template: 'bushco'
+  this.route('bushcopage', {
+    path: '/bushcopage',
+    template: 'bushcopage'
   });
 });
 
+Router.map(function() {
+  this.route('cobb', {
+    path: '/cobb',
+    template: 'cobb'
+  });
+});
+
+Router.map(function() {
+  this.route('sbxpage', {
+    path: '/sbxpage',
+    template: 'sbxpage'
+  });
+});
+
+
+Router.map(function() {
+  this.route('about', {
+    path: '/about',
+    template: 'about'
+  });
+});
+
+Router.map(function() {
+  this.route('contact', {
+    path: '/contact',
+    template: 'contact'
+  });
+});
 
 
 

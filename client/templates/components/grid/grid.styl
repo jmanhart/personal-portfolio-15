@@ -3,50 +3,12 @@
 @import 'jeet'
 
 //////////////////////////////////////////////////// 
-// BLACK Bars 
-
-.top, .bottom, .left, .right {
-  background-color: #000000;
-  position: fixed;
-  z-index 999
-  }
-  .left, .right {
-    top: 0; bottom: 0;
-    width: 15px;
-    }
-    .left { 
-      left: 0; 
-    }
-    .right { 
-      right: 0; 
-    }
-    
-  .top, .bottom {
-    left: 0; right: 0;
-    height: 15px;
-    }
-    .top { 
-      top: 0; 
-    }
-    .bottom { 
-      bottom: 0; 
-      }
-      
-
-#bush
-  background-color: #C1353D;
-  z-index 998
-     
-//////////////////////////////////////////////////// 
-
-
-
-//////////////////////////////////////////////////// 
-// Grid
+// HOME GRID
 
 .Grid
   width 75%
   height 250px
+  display block
   margin 0 auto
   padding-bottom 15px
   padding-top 2%
@@ -91,15 +53,7 @@
           col(1/2, gutter: 2, cycle: 2)
       +below(400px)
           col(1/1, gutter: 2, cycle: 1)
- 
-// .GridItem:hover
-  //     background grey
-  //     border 0px solid rgba(0, 0, 0, 0.2)
-  //     p, h1, h2, h3, h4
-  //       color white
-  //     a 
-  //       text-decoration none
-      
+       
 //////////////////////////////////////////////////// 
 
 
