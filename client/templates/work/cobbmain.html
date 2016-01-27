@@ -17,7 +17,7 @@
       </p>
       <a href="{{pathFor 'cobb'}}">
         <div class="Bandbutton">
-            <h5> See More</h5>
+            <h5> See Project</h5>
         </div>
       </a>
     </div>
@@ -30,20 +30,20 @@
 <!--                      -->
 
 <template name="cobb">
-  <div class="left" id="bush"></div>
-  <div class="right" id="bush"></div>
- <header>
-<a href="{{pathFor 'home'}}">
-<div class="Button2Wrapper">
-  <div class="Button2">
-    <!-- <a href="{{pathFor 'home'}}"> -->
-      <i class="fa fa-arrow-left"></i>
-      <h3>JM</h3>
-   <!--  </a> -->
-  </div>
-</div>
-</a>
-</header>
+  <div class="left" id="cobb"></div>
+  <div class="right" id="cobb"></div>
+
+
+   <header>
+    <a href="{{pathFor 'home'}}">
+      <div class="Button2Wrapper">
+        <div class="Button2" id="cobbback">
+            <i class="fa fa-arrow-left"></i>
+            <h3>JM</h3>
+        </div>
+      </div>
+    </a>
+    </header>
 
 
     <div class="WorkWrapper">
@@ -51,17 +51,63 @@
           <img class="WorkImage" src="images/cobb-trio.png"/>
       </div>
     </div>
-    <img id="CobbOver" src="/images/projects/cobb-logo.png">
-      <div class="ProjectWrapper">
-        <div class="ProjectContentWrapper">
-          <div class="ProjectIntro">
-            <h3>www.cobbvantrass.com</h3>
-            <p>Cobb challenged the team at Marlin to re-direct their existing website to better highlight Cobb's focus on Education, Product, and to help further boast their role as leader within the poultry game.</p>
-          </div>
 
-        
-    {{> bands01}}
+    <img id="CobbOver" src="/images/projects/cobb-logo.png">
+
+    <div class="ProjectWrapper">
+      <div class="ProjectContentWrapper">
+        <div class="ProjectIntro">
+          <h3>www.cobbvantrass.com</h3>
+          <p>Cobb challenged the team at Marlin to re-direct their existing website to better highlight Cobb's focus on Education, Product, and to help further boast their role as leader within the poultry game.</p>
         </div>
+      </div>
+
+      <hr>
+
+<section class="TwoColBand" id="CobbDetails">
+    <div class="Band-Left">
+      <img src="images/cobb-app-01.png"/>
+    </div>
+    <div class="Band-Right">
+      <h3>
+          Cobb Connection
+      </h3>
+      <p> 
+          Cobb Vantress is a global company that requires its users access to imporatant information at all times. This required us to create a native application for both <a href="https://itunes.apple.com/us/app/cobb-connection/id688161665?mt=8">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.cobbvantress.cobbconnection">Andriod</a>. 
+      </p>
+<!--       <a href="{{pathFor 'cobb'}}">
+        <div class="Bandbutton">
+            <h5> See More</h5>
+        </div>
+      </a> -->
+    </div>
+  </section>
+    </div>
+
+          <div class="footer-wrapper" id="cobbfooter">
+        <div class="footer-content">
+          <h3 class="footer-copy">manhartjohn@gmail.com</h3>
+          <h2 class="footer-icons">
+
+            <a href="https://twitter.com/johnmanhart">
+             <i class="fa fa-twitter"></i>
+            </a>
+
+            <a href="https://bitbucket.org/jmanhart/">
+             <i class="fa fa-bitbucket"></i>
+            </a>
+
+            <a href="https://www.instagram.com/johnmanhart/">
+             <i class="fa fa-instagram"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/john-manhart-9342aa48">
+             <i class="fa fa-linkedin"></i>
+            </a>
+          </h2>
+
+        </div>
+
       </div>
 
 </template>
