@@ -3,17 +3,17 @@
 <!--                      -->
 
 <template name="cobbband">
-
+ <hr>
   <section class="TwoColBand">
     <div class="Band-Left">
-      <img src="images/projects/cobb-logo.png"/>
+      <img id="CobbBandTeaser" src="images/cobb-head.png"/>
     </div>
     <div class="Band-Right">
       <h3>
           Cobb Vantress
       </h3>
       <p> 
-          What if all the creative talent of an agency went into developing brands of their own?
+          Web Design & Mobile App Design
       </p>
       <a href="{{pathFor 'cobb'}}">
         <div class="Bandbutton">
@@ -32,39 +32,35 @@
 <template name="cobb">
   <div class="left" id="bush"></div>
   <div class="right" id="bush"></div>
-      <header>
-        <div class="header">
-            <ul class="Nav">
-              <li><a href="{{pathFor 'home'}}"><h3>jm</h3></a></li>
-              <li>          
-                <a class="ButtonLink" href="{{pathFor 'contact'}}">
-                  <div class="Button">
-                      <h5>Contact</h5>
-                  </div>
-                </a>
-           </li>
-            </ul>
-        </div>
-      </header>
+ <header>
+<a href="{{pathFor 'home'}}">
+<div class="Button2Wrapper">
+  <div class="Button2">
+    <!-- <a href="{{pathFor 'home'}}"> -->
+      <i class="fa fa-arrow-left"></i>
+      <h3>JM</h3>
+   <!--  </a> -->
+  </div>
+</div>
+</a>
+</header>
+
 
     <div class="WorkWrapper">
        <div class="Work">
           <img class="WorkImage" src="images/cobb-trio.png"/>
       </div>
     </div>
-    
+    <img id="CobbOver" src="/images/projects/cobb-logo.png">
       <div class="ProjectWrapper">
         <div class="ProjectContentWrapper">
-          <div class="ProjectLogo">
-            <img class="WorkImage" src="../images/projects/cobb-logo.png">
-            <img class="WorkImage" id="MarlinLogo" src="../images/projects/marlin-logo.png">
-          </div>
           <div class="ProjectIntro">
-            <p>RetailMeNot is an Austin-based company that operates the world’s largest marketplace for digital offers. We worked with the product team on prototyping, overhauling visuals, and creating web-based responsive components.</p>
+            <h3>www.cobbvantrass.com</h3>
+            <p>Cobb challenged the team at Marlin to re-direct their existing website to better highlight Cobb's focus on Education, Product, and to help further boast their role as leader within the poultry game.</p>
           </div>
 
         
-    {{> bands02}}
+    {{> bands01}}
         </div>
       </div>
 

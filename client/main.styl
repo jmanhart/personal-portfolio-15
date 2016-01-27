@@ -51,7 +51,7 @@ html body
 h1
   font-family 'Lato', sans-serif
   font-weight 900
-  font-size 60px
+  font-size 49px
   //line-height 20px
   color black
   text-align center
@@ -93,11 +93,9 @@ h5
   font-size 16px
   //line-height 40px
   color black
-  text-align center
-  padding 1%
+  text-align left
   padding-bottom 3px
   text-decoration none
-  min-width 100%
   
 h6
   font-family 'Lato', sans-serif
@@ -129,6 +127,8 @@ hr
   // max-width: 5em;
   border-top-color: rgba(0,0,0,0.1);
   
+a
+  text-decoration none
 
 
 
@@ -137,7 +137,7 @@ hr
 
 header
   width 100%
-  height 100px
+  height auto
   overflow hidden
   position fixed
   top 0
@@ -150,13 +150,15 @@ header
   -ms-transition height 0.3s
   -o-transition height 0.3s
   transition height 0.3s
-  +below(768px)
-    background rgba(255,255,255,.95)
+  // +below(768px)
+  //   background rgba(255,255,255,.95)
 
 .Nav
   list-style none
-  margin 0 
-  width 100%
+  margin 0 auto
+  width 90%
+  padding 4%
+  //max-height 100px
   display -webkit-box
   display -moz-box
   display -ms-flexbox
@@ -174,18 +176,36 @@ header
     text-decoration none
     display block
     //padding 1em
-    color white
+    //color white
     
-.Nav li:last-child
-  padding 17px 0px 0px 34px
-  width 140px
+.Nav li:first-child
+  padding 2% 
+  width 80px
+  height 45px
+  display flex
+  justify-content center
+  align-items center
+  background-color #000000
   -webkit-transition all 0.2s ease-out
   -moz-transition all 0.2s ease-out
   -ms-transition all 0.2s ease-out
   -o-transition all 0.2s ease-out
   transition all 0.2s ease-out
-  &:hover
-    width 150px
+  h3
+    color white
+  // &:hover
+  //   width 150px    
+
+// .Nav li:last-child
+//   padding 17px 0px 0px 34px
+//   width 140px
+//   -webkit-transition all 0.2s ease-out
+//   -moz-transition all 0.2s ease-out
+//   -ms-transition all 0.2s ease-out
+//   -o-transition all 0.2s ease-out
+//   transition all 0.2s ease-out
+//   &:hover
+//     width 150px
   
 
     
@@ -212,6 +232,8 @@ header
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap wrap
+  flex-direction column
   
 .IntroImage
   width 45%
@@ -232,6 +254,58 @@ header
 
   
 ////////////////////////////////////////////////////
+// BUTTONS
+
+.Button2Wrapper
+  height 30px
+  width 68px
+  //background-color green
+  padding 35px 
+  .Button2
+    background-color #000000
+    width: 68px;
+    height: 40px;
+    display flex
+    flex-direction row
+    align-items center
+    justify-content space-between
+    -webkit-transition all 0.2s ease-out
+    -moz-transition all 0.2s ease-out
+    -ms-transition all 0.2s ease-out
+    -o-transition all 0.2s ease-out
+    transition all 0.2s ease-out
+    a 
+      text-decoration none
+    h3
+      color white
+      font-size 20px
+      padding-right 20px
+    i
+      color #000000
+      padding-bottom: 3px;
+      padding-left: 7px;
+      -webkit-transition all 0.15s ease-out
+      -moz-transition all 0.15s ease-out
+      -ms-transition all 0.15s ease-out
+      -o-transition all 0.15s ease-out
+      transition all 0.15s ease-out
+      
+
+  
+  .Button2:hover
+    height 40px
+    width 90px
+    //border 4px solid #000
+    background-color #000000
+    i
+      padding-bottom: 3px;
+      padding-left: 17px;
+      color #ffffff
+      -webkit-transition all 0.15s ease-in
+      -moz-transition all 0.15s ease-in
+      -ms-transition all 0.15s ease-in
+      -o-transition all 0.15s ease-in
+      transition all 0.15s ease-in
 
 
 
@@ -254,4 +328,94 @@ header
     height 30px
     border 4px solid #000
     background-color #F8F8F8
+    
+////////////////////////////////////////////////////
+
+
+  
+////////////////////////////////////////////////////
+// ABOUT
+
+.AboutWrapper
+  height auto
+  width 100%
+  display: flex;
+  justify-content flex-start
+  align-items: center;
+  flex-wrap wrap
+  flex-direction column
+
+  
+#AboutIntro
+  flex-direction row
+  .BandSingle
+    width 75%
+    height 100%
+    padding-bottom 5%
+    padding-top 20%
+    align-items flex-end
+    justify-content flex-start
+    h3
+      color #000000
+      padding-top 2% 
+      width 100%
+      +below(600px)
+        text-align center
+    p
+      max-width 800px
+      text-align left
+      font-size 30px
+      line-height 38px
+         
+
+#AboutDetails
+  .Band-Left
+    width 50%
+    height 100%
+    align-items flex-start
+    h3
+      color #000000
+      padding-top 2% 
+      +below(600px)
+        text-align center
+         
+  .Band-Right
+    height 100%
+    padding-top 3px
+    padding-bottom 20px
+    //padding 2% 1% 0% 1%
+    align-items flex-start
+    justify-content flex-start
+    flex-wrap nowrap
+    h4
+      text-align left
+      font-size 28px
+      line-height 34px
+      padding-bottom 3%
+      max-width 500px
+      width 100%
+    ul 
+      padding 0%
+      padding-bottom 3%
+      li 
+        padding-top 5%
+      li:last-child
+        padding-bottom 8%
+    p
+      color #000000
+      padding-bottom 2%
+      padding-left 3%
+      max-width 450px
+      
+
+.Abouttitle
+  font-family 'Lato', sans-serif
+  font-weight 900
+  font-size 20px
+  //line-height 40px
+  color black
+  font-style normal
+  text-align left
+  padding-bottom 3px
+  text-decoration none
   
