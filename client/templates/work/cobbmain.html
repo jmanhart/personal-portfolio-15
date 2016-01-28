@@ -1,6 +1,4 @@
-<!--                      -->
-<!--  COBB BAND           -->
-<!--                      -->
+<!--  COBB Home Band            -->
 
 <template name="cobbband">
  <hr>
@@ -10,7 +8,7 @@
     </div>
     <div class="Band-Right">
       <h3>
-          Cobb Vantress
+          Cobb Website Refresh
       </h3>
       <p> 
           Web Design & Mobile App Design
@@ -25,15 +23,23 @@
   <hr>
 </template>
 
-<!--                      -->
-<!--  COBB PAGE           -->
-<!--                      -->
+
+
+
+
+
+
+
+
+
+<!--  COBB Project Page            -->
 
 <template name="cobb">
-  <div class="left" id="cobb"></div>
-  <div class="right" id="cobb"></div>
+  <!-- Side Bars -->
+  <div class="left" id="cobbbars"></div>
+  <div class="right" id="cobbbars"></div>
 
-
+  <!--  Navagation -->
    <header>
     <a href="{{pathFor 'home'}}">
       <div class="Button2Wrapper">
@@ -45,15 +51,17 @@
     </a>
     </header>
 
-
+    <!-- Hero Image -->
     <div class="WorkWrapper">
-       <div class="Work">
+       <div class="Work" id="cobbbackground">
           <img class="WorkImage" src="images/cobb-trio.png"/>
       </div>
     </div>
 
-    <img id="CobbOver" src="/images/projects/cobb-logo.png">
+    <!-- COBB Logo -->
+    <img id="cobbover" src="/images/projects/cobb-logo.png">
 
+    <!-- COBB Introduction -->
     <div class="ProjectWrapper">
       <div class="ProjectContentWrapper">
         <div class="ProjectIntro">
@@ -64,51 +72,47 @@
 
       <hr>
 
-<section class="TwoColBand" id="CobbDetails">
-    <div class="Band-Left">
-      <img src="images/cobb-app-01.png"/>
-    </div>
-    <div class="Band-Right">
-      <h3>
-          Cobb Connection
-      </h3>
-      <p> 
-          Cobb Vantress is a global company that requires its users access to imporatant information at all times. This required us to create a native application for both <a href="https://itunes.apple.com/us/app/cobb-connection/id688161665?mt=8">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.cobbvantress.cobbconnection">Andriod</a>. 
-      </p>
-<!--       <a href="{{pathFor 'cobb'}}">
-        <div class="Bandbutton">
-            <h5> See More</h5>
+    <!-- COBB Connection Setup-->  
+    <section class="TwoColBand" id="CobbDetails">
+        <div class="Band-Left">
+          <img src="images/cobb-app-01.png"/>
         </div>
-      </a> -->
-    </div>
-  </section>
-    </div>
-
-          <div class="footer-wrapper" id="cobbfooter">
-        <div class="footer-content">
-          <h3 class="footer-copy">manhartjohn@gmail.com</h3>
-          <h2 class="footer-icons">
-
-            <a href="https://twitter.com/johnmanhart">
-             <i class="fa fa-twitter"></i>
-            </a>
-
-            <a href="https://bitbucket.org/jmanhart/">
-             <i class="fa fa-bitbucket"></i>
-            </a>
-
-            <a href="https://www.instagram.com/johnmanhart/">
-             <i class="fa fa-instagram"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/john-manhart-9342aa48">
-             <i class="fa fa-linkedin"></i>
-            </a>
-          </h2>
-
+        <div class="Band-Right">
+          <h3>
+              Cobb Connection
+          </h3>
+          <p> 
+              Cobb Vantress is a global company that requires its users access to imporatant information at all times. This required us to create a native application for both <a href="https://itunes.apple.com/us/app/cobb-connection/id688161665?mt=8">iOS</a> and <a href="https://play.google.com/store/apps/details?id=com.cobbvantress.cobbconnection">Andriod</a>. 
+          </p>
         </div>
+      </section>
+    </div>
 
-      </div>
+
+  <!-- Footer--> 
+  <div class="footer-wrapper" id="cobbfooter">
+    <div class="footer-content">
+      <h3 class="footer-copy">manhartjohn@gmail.com</h3>
+      <h2 class="footer-icons">
+
+        <a href="https://twitter.com/johnmanhart">
+         <i class="fa fa-twitter"></i>
+        </a>
+
+        <a href="https://bitbucket.org/jmanhart/">
+         <i class="fa fa-bitbucket"></i>
+        </a>
+
+        <a href="https://www.instagram.com/johnmanhart/">
+         <i class="fa fa-instagram"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/john-manhart-9342aa48">
+         <i class="fa fa-linkedin"></i>
+        </a>
+      </h2>
+    </div>
+  </div>
 
 </template>
 

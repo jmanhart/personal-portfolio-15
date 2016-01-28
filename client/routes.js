@@ -10,59 +10,6 @@ Router.map(function() {
   });
 });
 
-
-Router.map(function() {
-  this.route('bush', {
-    path: '/bush',
-    template: 'bush'
-  });
-});
-
-
-Router.map(function() {
-  this.route('coffee', {
-    path: '/coffee',
-    template: 'coffee'
-  });
-});
-
-Router.map(function() {
-  this.route('blog', {
-    path: '/blog',
-    template: 'blog'
-  });
-});
-
-Router.map(function() {
-  this.route('bushbfpage', {
-    path: '/bushbfpage',
-    template: 'bushbfpage'
-    
-  });
-});
-
-Router.map(function() {
-  this.route('bushcopage', {
-    path: '/bushcopage',
-    template: 'bushcopage'
-  });
-});
-
-Router.map(function() {
-  this.route('cobb', {
-    path: '/cobb',
-    template: 'cobb'
-  });
-});
-
-Router.map(function() {
-  this.route('sbxpage', {
-    path: '/sbxpage',
-    template: 'sbxpage'
-  });
-});
-
-
 Router.map(function() {
   this.route('about', {
     path: '/about',
@@ -76,6 +23,55 @@ Router.map(function() {
     template: 'contact'
   });
 });
+
+Router.map(function() {
+  this.route('blog', {
+    path: '/blog',
+    template: 'blog'
+  });
+});
+
+
+
+
+
+Router.map(function() {
+  this.route('cobb', {
+    path: '/cobb',
+    template: 'cobb'
+  });
+});
+
+Router.map(function() {
+  this.route('sbx', {
+    path: '/sbx',
+    template: 'sbx'
+  });
+});
+
+
+Router.map(function() {
+  this.route('bush', {
+    path: '/bush',
+    template: 'bush'
+  });
+});
+
+Router.map(function() {
+  this.route('sgfc', {
+    path: '/sgfc',
+    template: 'sgfc'
+  });
+});
+
+Router.map(function() {
+  this.route('port', {
+    path: '/port',
+    template: 'port'
+  });
+});
+
+
 
 
 

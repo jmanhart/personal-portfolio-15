@@ -1,0 +1,90 @@
+@import 'nib'
+@import 'rupture'
+
+
+
+////////////////////////////////////////////////////
+// ABOUT
+
+.AboutWrapper
+  height auto
+  width 100%
+  display: flex;
+  justify-content flex-start
+  align-items: center;
+  flex-wrap wrap
+  flex-direction column
+
+  
+#AboutIntro
+  flex-direction row
+  .BandSingle
+    width 75%
+    height 100%
+    padding-bottom 5%
+    padding-top 20%
+    align-items flex-end
+    justify-content flex-start
+    h3
+      color #000000
+      padding-top 2% 
+      width 100%
+      +below(600px)
+        text-align center
+    p
+      max-width 800px
+      text-align left
+      font-size 30px
+      line-height 38px
+         
+
+#AboutDetails
+  .Band-Left
+    width 50%
+    height 100%
+    align-items flex-start
+    h3
+      color #000000
+      padding-top 2% 
+      +below(600px)
+        text-align center
+         
+  .Band-Right
+    height 100%
+    padding-top 3px
+    padding-bottom 20px
+    //padding 2% 1% 0% 1%
+    align-items flex-start
+    justify-content flex-start
+    flex-wrap nowrap
+    h4
+      text-align left
+      font-size 28px
+      line-height 34px
+      padding-bottom 3%
+      max-width 500px
+      width 100%
+    ul 
+      padding 0%
+      padding-bottom 3%
+      li 
+        padding-top 5%
+      li:last-child
+        padding-bottom 8%
+    p
+      color #000000
+      padding-bottom 2%
+      padding-left 3%
+      max-width 450px
+      
+
+.Abouttitle
+  font-family 'Lato', sans-serif
+  font-weight 900
+  font-size 20px
+  //line-height 40px
+  color black
+  font-style normal
+  text-align left
+  padding-bottom 3px
+  text-decoration none
