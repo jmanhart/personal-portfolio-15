@@ -16,11 +16,12 @@
 
 html body
   color #eee 
+  background-color #ffffff
   // background-color #fa6347
-  background-color rgb(244, 243, 242)
-  background-image: url("images/noise.png");
-  background-repeat: repeat;
-  background-image-opacity: 0.5
+  //background-color rgb(244, 243, 242)
+  //background-image: url("images/noise.png");
+  //background-repeat: repeat;
+  //background-image-opacity: 0.5
   height 100%
   zoom 95%
   margin:0;
@@ -348,7 +349,8 @@ header
     border-radius: 4px
     display flex
     flex-wrap wrap
-    
+    +below(600px)
+      width 95%
     .ProjectLogo
       width 20%
       height 20%
@@ -369,6 +371,8 @@ header
   display: flex;
   justify-content: center;
   align-items: center;
+  +below(600px)
+    height 400px
   .Work
     height 100%
     width 100%
@@ -380,6 +384,12 @@ header
   width 80%
   max-height auto
   margin 0 auto
+  display flex
+  +below(600px)
+    margin 0 auto
+    width 80%
+    overflow hidden
+
   
 
 ////////////////////////////////////////////////////
