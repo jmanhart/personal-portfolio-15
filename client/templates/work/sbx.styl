@@ -9,6 +9,16 @@
   background-color: #00704a;
   z-index 998   
   
+#sbxhomespot
+  align-items flex-end
+  +below(600px)
+    align-items center
+  
+#sbxhomeimage
+  width auto
+  max-height 220px
+  display flex
+  
 #sbxbackground
   background-image: -webkit-radial-gradient(center, #04C383, #00704a);
   background-image: radial-gradient(to center, #04C383, #00704a);
@@ -20,12 +30,17 @@
 #sbxback:hover
   i
     color #ffffff 
-    
+ 
+#sbxworkwrapper
+  height 600px
+
+
 #sbxover
   margin: 0 auto;
-  width: 12%;
+  width: 350px;
+  max-height 50%
   z-index: 1000;
-  margin-top: -6%;
+  margin-top: -580px;
     
 #sbxfooter
   background-color: #00704a; 

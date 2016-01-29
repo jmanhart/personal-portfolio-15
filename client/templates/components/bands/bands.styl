@@ -39,7 +39,9 @@
       justify-content center
       align-items center
     img
-      width 65%
+      width 100%
+      opacity 0.7
+
     +below(600px)
       margin-right 0% 
     .BandbuttonSingle
@@ -95,13 +97,6 @@
     justify-content flex-end
     +below(600px)
       justify-content center
-    #CobbBandTeaser
-      width auto
-      max-height 220px
-      display flex
-    #SBXBandTeaser
-      width auto
-      max-height 220px
    
   .Band-Right
     col(1/2, gutter: 2, cycle: 2)
@@ -136,7 +131,7 @@
         text-decoration none
         
     .Bandbutton
-      width 30%
+      width 160px
       height 40px
       min-width 30%
       border 5px solid #000
@@ -154,7 +149,7 @@
         width 75%
       
     .Bandbutton:hover
-      width 40%
+      width 175px
       height 40px
       border 5px solid #000
       background-color #F8F8F8
