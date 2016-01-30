@@ -2,40 +2,89 @@
 @import 'rupture'
 
 
-
-.footer-wrapper
-    //position fixed
-    //padding-bottom -10px
-    bottom 0px
-    background #000000
-    width 100%
-    height 100px
-    padding-right 10px
-    display flex
-
-.footer-content
-    width 93%
-    margin 0 auto
+.FooterWrapper
+  background-color #000000
+  height 100%
+  width 100%
+  
+.FooterContent
+  cf()
+  width 90%
+  height 100px
+  max-width 1200px
+  display flex
+  background-color #000000
+  justify-content center
+  margin 0 auto
+  +below(600px)
+    flex-wrap wrap
+    width 95%
+  .FooterLeft
+    col(1/2, gutter: 2, cycle: 2)
+    width 75%
     display flex
     align-items center
-    justify-content space-between
-    +below(960px)
-    	width 85%
-    .footer-copy
-      font-size 20px
-      padding-top 15px
+    justify-content flex-start
+    +below(600px)
+      width 100%
+    h3
+      text-align left
+      color white
       letter-spacing 1.25px
+      font-size 20px
+      +below(600px)
+        justify-content fle
+  .FooterRight
+    col(1/2, gutter: 2, cycle: 2)
+    width 25%
+    display flex
+    align-items center
+    flex-direction row
+    justify-content flex-end
+    +below(600px)
+      width 100%
+    h2
       color white
-      float left
-    .footer-icons
-      width 18%
-      justify-content space-between
+      width 100%
       display flex
-      font-size 22px
+      justify-content space-between
+      padding-bottom 0%
+      +below(600px)
+        justify-content flex-start
+        i 
+          padding-right 25px
+    a 
       color white
-      float right
-      a 
-        color white
+
+
+
+
+// .FootWrapper
+//   height 100%
+//   width 100%
+//   .FooterContent
+//     cf()
+//       width 75%
+//       max-width 1200px
+//       display flex
+//       justify-content center
+//       margin 0 auto
+//       .FooterCopy
+//         col(1/2, gutter: 2, cycle: 2)
+//         text-align left
+//         font-size 20px
+//         padding-top 15px
+//         letter-spacing 1.25px
+//         color white
+//       .FooterIcons
+//         col(1/2, gutter: 2, cycle: 2)
+//         justify-content space-between
+//         display flex
+//         font-size 22px
+//         color white
+//         padding-bottom 0%
+//         a 
+//           color white
         
-#cobbfooter
-  background-color: #C1353D;
+// #cobbfooter
+//   background-color: #C1353D;

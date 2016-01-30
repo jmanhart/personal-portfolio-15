@@ -5,7 +5,7 @@
 @import 'templates/**/**/*.import.styl'
 
 
-//edit()
+edit()
 *
   margin 0
 
@@ -47,7 +47,7 @@ h2
   font-size 26px 
   color black 
   text-align center
-  padding-bottom 1%
+  padding-bottom 2%
   +below(400px)
     font-size 21px
   
@@ -57,7 +57,6 @@ h3
   font-size 30px
   color black
   text-align center
-  padding-bottom 3%
   +below(400px)
     text-align center
   
@@ -292,12 +291,14 @@ header
       transition all 0.15s ease-in
 
 
-
+.ButtonWrapper
+  width 100%
+  height 100%
   .Button
-    width 56%
-    height 30px
+    width 200px
+    height 40px
     // min-width 30%
-    border 0px solid #000
+    border 5px solid #000
     display flex
     justify-content center
     align-items center
@@ -309,8 +310,8 @@ header
     transition all 0.2s ease-out
     
   .Button:hover
-    height 30px
-    border 4px solid #000
+    width 220px
+    //border 4px solid #000
     background-color #F8F8F8
     
 
