@@ -27,11 +27,14 @@
   i
     color #ffffff 
 
+#cobbworkwrapper
+  height 350px
+
 #cobbover
   margin: 0 auto;
   width: 15%;
   z-index: 1000;
-  margin-top: -5%;    
+  margin-top: -3%;    
 
 #cobbfooter
   background-color: #C1353D; 
@@ -78,3 +81,45 @@
       padding-bottom 2%
       padding-left 3%
       max-width 450px
+      
+
+
+
+#cobbonecol
+  cf()
+  width 75%
+  max-width 1200px
+  display flex
+  justify-content center
+  padding-top 3%
+  padding 3%
+  margin 0 auto
+  +below(400px)
+    flex-wrap wrap  
+  .BandSingle
+    col(1/2, gutter: 2, cycle: 2)
+    width 100%
+    height 100%
+    padding 0% 3% 0% 3%
+    display flex
+    flex-wrap wrap
+    align-items center
+    flex-direction column
+    justify-content center
+    margin-right 0%
+    h3
+      text-align left
+      max-width 900px
+    p
+      padding 0% 0% 6% 0%
+      line-height 30px
+      font-size 22px
+    a 
+      width 100%
+      text-decoration none
+      display flex
+      justify-content center
+      align-items center
+    img
+      width 100%
+      opacity 1
