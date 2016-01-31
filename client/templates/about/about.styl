@@ -2,6 +2,41 @@
 @import 'rupture'
 
 
+.AboutIntroWrapper
+  height 250px
+  width 75%
+  margin 0 auto
+  display: flex;
+  justify-content flex-end
+  align-items: center;
+  flex-wrap wrap
+  flex-direction column
+  padding-bottom 15px
+  +below(600px)
+    height 250px
+    width 95%
+  .AboutIntro
+    padding-left 15px
+    padding-right 15px
+    max-width 600px
+  
+.IntroImage
+  width 45%
+  margin 0 auto  
+
+#IntroImageScreenClip 
+  clip-path circle(40% at 50% 50%);
+  display flex
+  justify-content center
+  
+  
+.IntroText
+  text-decoration none
+  color #222
+  &:hover
+    text-decoration underline
+    color grey
+
 
 ////////////////////////////////////////////////////
 // ABOUT
@@ -15,34 +50,7 @@
   flex-wrap wrap
   flex-direction column
 
-  
-#AboutIntro
-  flex-direction row
-  +below(600px)
-    width 95%
-  .BandSingle
-    width 75%
-    height 100%
-    padding-bottom 1%
-    padding-top 10%
-    align-items flex-start
-    justify-content flex-start
-    +below(600px)
-      width 95%
-      padding-top 30%
 
-    h3
-      color #000000
-      padding-top 2% 
-      width 100%
-      +below(600px)
-        text-align left
-    p
-      max-width 800px
-      text-align left
-      font-size 30px
-      line-height 38px
-         
 
 #AboutDetails
   .Band-Left

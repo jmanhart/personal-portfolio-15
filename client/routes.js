@@ -35,6 +35,8 @@ Router.map(function() {
 
 
 
+
+
 Router.map(function() {
   this.route('cobb', {
     path: '/cobb',
