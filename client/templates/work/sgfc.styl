@@ -40,3 +40,50 @@
 
 #sgfcfooter
   background-color #e2ac45 
+  
+
+
+#sgfclogo
+  max-width 275px
+  height 100%
+  .BandSingle
+    height 275px
+  
+.OneColBand
+  cf()
+  width 75%
+  max-width 1200px
+  display flex
+  justify-content center
+  margin 0 auto
+  +below(400px)
+    flex-wrap wrap  
+  .BandSingle
+    col(1/2, gutter: 2, cycle: 2)
+    width 100%
+    height 350px
+    padding 0% 3% 0% 3%
+    display flex
+    flex-wrap wrap
+    align-items center
+    flex-direction column
+    justify-content center
+    margin-right 0%
+    h3
+      text-align left
+      max-width 900px
+    p
+      padding 0% 0% 6% 0%
+      line-height 30px
+      font-size 22px
+    a 
+      width 100%
+      text-decoration none
+      display flex
+      justify-content center
+      align-items center
+    img
+      width 100%
+      opacity 0.7
+    +below(600px)
+      margin-right 0% 
