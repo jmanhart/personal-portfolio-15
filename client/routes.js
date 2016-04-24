@@ -60,8 +60,8 @@ Router.map(function() {
 });
 
 Router.map(function() {
-  this.route('styles', {
-    path: '/styles',
-    template: 'styles'
+  this.route('colophon', {
+    path: '/colophon',
+    template: 'colophon'
   });
 });
