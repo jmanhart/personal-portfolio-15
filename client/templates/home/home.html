@@ -1,75 +1,33 @@
 <template name="home">
-{{>bars}}
- 
 
-    <header>
-        <div class="Button2Wrapper" id="nohover">
-          <div class="Button2">
-            <i class="fa fa-arrow-left"></i>
-            <h3>JM</h3>
-          </div>
-        </div>
-    </header>
+<header>
+  <div class="Button2Wrapper" id="nohover">
+    <div class="Button2">
+      <i class="fa fa-arrow-left"></i>
+      <h3>JM</h3>
+    </div>
+  </div>
+</header>
 
-    
-     <div class="IntroWrapper">
-        <div class="IntroContent">
-          <img class="IntroImage" id="IntroImageScreenClip" src="images/me.png"/>
-          <h1>John Manhart</h1> 
-          <h2>
-            A web designer living in the Midwest. <br> 
-          </h2>
-        </div>
-
-        <a href="{{pathFor 'about'}}">
-          <div class="ButtonWrapper">
-            <div class="Button">
-              <h5>About Me</h5>
-            </div>
-          </div>
-        </a>
-
-      </div>
- 
-      <div class="ProjectWrapper">
-        <div class="ProjectContentWrapper">
-        {{> bands02}}
+  <div class="IntroWrapper">
+    <div class="IntroContent">
+      <img class="IntroImage" id="IntroImageScreenClip" src="images/me.png"/>
+      <h1>John Manhart</h1>
+      <h2>
+        A web designer living in the Midwest. <br>
+      </h2>
+    </div>
+    <a href="{{pathFor 'about'}}">
+      <div class="ButtonWrapper">
+        <div class="Button">
+          <h5>About Me</h5>
         </div>
       </div>
-
-      {{>footer}}
-      
+    </a>
+  </div>
+  <div class="ProjectWrapper">
+    <div class="ProjectContentWrapper">
+      {{> bands02}}
+    </div>
+  </div>
 </template>
-
-
-
-
-
-<!--      <div class="IntroWrapper">
-        <div class="IntroContent">
-          <img class="IntroImage" id="IntroImageScreenClip" src="images/me.png"/>
-          <h1>John Manhart</h1> 
-          <h2>
-            <a class="IntroText" href="{{pathFor 'coffee'}}">Designer</a>, 
-            <a class="IntroText" href="{{pathFor 'coffee'}}">Developer</a> and 
-            <a class="IntroText" href="{{pathFor 'coffee'}}">other things</a>.
-          </h2>
-        </div>
-      </div>
- 
-      <div class="ProjectWrapper">
-        <div class="ProjectContentWrapper">
-        {{> bands02}}
-        </div>
-      </div> -->
-
-
-
-
-
-
-
-
-
-
-
