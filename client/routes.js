@@ -31,12 +31,6 @@ Router.map(function() {
   });
 });
 
-
-
-
-
-
-
 Router.map(function() {
   this.route('cobb', {
     path: '/cobb',
@@ -51,7 +45,6 @@ Router.map(function() {
   });
 });
 
-
 Router.map(function() {
   this.route('bush', {
     path: '/bush',
@@ -63,13 +56,6 @@ Router.map(function() {
   this.route('sgfc', {
     path: '/sgfc',
     template: 'sgfc'
-  });
-});
-
-Router.map(function() {
-  this.route('port', {
-    path: '/port',
-    template: 'port'
   });
 });
 
