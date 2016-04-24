@@ -73,8 +73,9 @@ Router.map(function() {
   });
 });
 
-
-
-
-
-
+Router.map(function() {
+  this.route('styles', {
+    path: '/styles',
+    template: 'styles'
+  });
+});
