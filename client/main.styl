@@ -5,8 +5,8 @@
 @import 'templates/**/**/*.import.styl'
 @import './vars.styl'
 
+edit()
 
- edit()
 *
   margin 0
 
@@ -18,96 +18,161 @@ html
 body
   min-height: 100%
 
+h1 //Headline Sans-Serif
+  font-family: 'Lato', sans-serif
+  font-weight: 900
+  font-size: 250%
+  line-height: 150%
+  color: $black
+  text-align: left
 
-h1
-  font-family 'Lato', sans-serif
-  font-weight 900
-  font-size 49px
-  color black
-  text-align center
-  +below(400px)
-    font-size 36px
-    text-align center
+h2 //Headline Serif
+  font-family: 'Vollkorn', serif
+  font-weight: 400
+  font-size: 250%
+  line-height: 150%
+  color: $black
+  text-align: left
 
-h2
-  padding-bottom 3%
-  font-family 'Vollkorn', serif
-  font-weight 400
-  font-size 26px
-  color black
-  text-align center
-  padding-bottom 2%
-  +below(400px)
-    font-size 21px
+h3 //Sub-Head Sans-Serif
+  font-family:'Lato', sans-serif
+  font-weight: 900
+  font-size: 150%
+  line-height: 125%
+  color: $black
+  text-align: left
 
-h3
-  font-family 'Lato', sans-serif
-  font-weight 900
-  font-size 30px
-  color black
-  text-align center
-  +below(400px)
-    text-align center
+h4 //Sub-Head Serif
+  font-family: 'Vollkorn', serif
+  font-weight: 400
+  font-size: 150%
+  line-height: 125%
+  color: $black
+  text-align: left
 
-h4
-  font-family 'Vollkorn', serif
-  font-weight 400
-  font-style italic
-  font-size 18px
-  line-height 20px
-  color black
-  text-align center
-  padding 1%
-  padding-bottom  5px
 
 h5
   font-family 'Lato', sans-serif
   font-weight 900
-  font-size 16px
-  color black
-  text-align left
-  padding-bottom 3px
-  text-decoration none
+  font-size 125%
+  line-height: 100%
+  color: $black
+  text-align: left
 
 h6
   font-family 'Lato', sans-serif
   font-weight 900
-  font-size 40px
-  line-height 50px
-  color black
-  text-align center
-  padding 1%
-  padding-bottom 3px
-  +below(400px)
-    text-align center
+  font-size 125%
+  line-height: 100%
+  color: $black
+  text-align: left
 
 p
   font-family 'Vollkorn', serif
-  font-weight 400
-  font-size 18px
-  line-height 34px
-  color black
-  text-align left
-  max-width 400px
-  min-width 100px
-  letter-spacing 0.15px
+  font-weight: 400
+  font-size: 125%
+  line-height: 150%
+  color: $black
+  text-align: left
 
 hr
   text-align center
-  //margin 2em auto
-  // max-width: 5em;
   border-top-color: rgba(0,0,0,0.1);
 
 a
-  text-decoration none
+  text-decoration: none
+
+button
+  width: 200px
+  height: 40px
+  border: 4px solid $black
+  display: flex
+  justify-content: center
+  align-items: center
+  -webkit-transition: all 0.2s ease-out
+  -moz-transition: all 0.2s ease-out
+  -ms-transition: all 0.2s ease-out
+  -o-transition: all 0.2s ease-out
+  transition: all 0.2s ease-out
+  &:hover
+    width: 220px
+    background-color: $offwhite
 
 
-.Hundred
-  width 100%
-  height 100%
+.wrapper
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
 
-////////////////////////////////////////////////////
-// NAV START
+.container
+  width: 960px
+  height: 100%
+  +below($desktop)
+    padding: 0% 4% 0% 4%
+
+.wrapper-hero
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  background-color: $green
+  .hero
+    height: 300px
+    background-color: $white
+
+
+.grid
+  cf()
+  padding: 1% 0% 1% 0%
+  .column-single
+    col(1/1, cycle: 1)
+    height: 100px
+    background-color: $gray
+  .column-halfs
+    col(1/2, cycle: 2)
+    height: 100px
+    background-color:$gray
+    +below($phablet)
+      col(1/1)
+  .column-thirds
+    col(1/3, cycle: 3)
+    height: 100px
+    background-color: $gray
+    +below($phablet)
+      col(1/1, cycle: 1)
+  .column-quarter
+    col(1/4, cycle: 4)
+    height: 100px
+    background-color: $gray
+    +below($tablet)
+      col(1/2, cycle: 2)
+    +below($phablet)
+      col(1/1, cycle: 1)
+  .column-fifths
+    col(1/5, cycle: 5)
+    height: 100px
+    background-color: $gray
+    +below($phablet)
+      col(1/1, cycle: 1)
+  .column-sixths
+    col(1/6, cycle: 6)
+    height: 100px
+    background-color: $gray
+    +below($tablet)
+      col(1/3, cycle: 3)
+    +below($phablet)
+      col(1/1, cycle: 1)
+
+
+
+
+
+
+
+
+
+
 
 header
   width 100%
