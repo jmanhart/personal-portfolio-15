@@ -10,7 +10,10 @@
  </body>
 
  <template name="layout">
-  {{>bars}}
+   {{>bars}}
+   <header>
+     {{>navigation}}
+    </header>
    	{{> yield}}
   {{>footer}}
  </template>
