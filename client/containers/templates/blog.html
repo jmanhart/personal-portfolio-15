@@ -1,0 +1,23 @@
+<template name="blog">
+  {{>bars}}
+   <div class="dude">
+      <header>
+      {{>navigation}}
+    </header>
+
+    <div class="blog-posts">
+      {{#each posts}}
+      <div class="post-wrapper">
+        <div class="post">
+          {{#each photos}}
+          <img src="{{this.original_size.url}}"/>
+          {{/each}}
+          
+        </div>
+      </div>
+      {{/each}}
+
+    </div>
+
+</div>
+</template>

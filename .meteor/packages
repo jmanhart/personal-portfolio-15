@@ -10,4 +10,6 @@ minimongo
 http
 npm-container
 #juliancwirko:s-image-box
-jeremy:snapsvg
+okgrow:router-autoscroll
+dispatch:spinner
+react
