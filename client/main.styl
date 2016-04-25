@@ -1,122 +1,42 @@
 @import 'rupture'
 @import 'nib'
 @import 'jeet'
-@import 'templates/**/*.import.styl'
-@import 'templates/**/**/*.import.styl'
+@import '/styles/vars.styl'
+@import '/styles/grid.styl'
 
+edit()
 
-//edit()
 *
   margin 0
 
-.dude
-  width 100%
-  height 100%
-
-
-html body
-  color #eee 
-  background-color #ffffff
-  // background-color #fa6347
-  //background-color rgb(244, 243, 242)
-  //background-image: url("images/noise.png");
-  //background-repeat: repeat;
-  //background-image-opacity: 0.5
-  height 100%
-  zoom 95%
+html
+  height: 100%
+  width: 100%
   margin:0;
-  display: flex;
-  flex-direction: column;
 
-h1
-  font-family 'Lato', sans-serif
-  font-weight 900
-  font-size 49px
-  color black
-  text-align center
-  +below(400px)
-    font-size 36px
-    text-align center
-  
+body
+  min-height: 100%
 
-  
-h2  
-  padding-bottom 3%
-  font-family 'Vollkorn', serif
-  font-weight 400
-  font-size 26px 
-  color black 
-  text-align center
-  padding-bottom 1%
-  +below(400px)
-    font-size 21px
-  
-h3
-  font-family 'Lato', sans-serif
-  font-weight 900
-  font-size 30px
-  color black
-  text-align center
-  padding-bottom 3%
-  +below(400px)
-    text-align center
-  
-h4
-  font-family 'Vollkorn', serif
-  font-weight 400
-  font-style italic
-  font-size 18px
-  line-height 20px
-  color black
-  text-align center
-  padding 1%
-  padding-bottom  5px
-  
-h5
-  font-family 'Lato', sans-serif
-  font-weight 900
-  font-size 16px
-  color black
-  text-align left
-  padding-bottom 3px
-  text-decoration none
-  
-h6
-  font-family 'Lato', sans-serif
-  font-weight 900
-  font-size 40px
-  line-height 50px
-  color black
-  text-align center
-  padding 1%
-  padding-bottom 3px
-  +below(400px)
-    text-align center
-  
-p
-  font-family 'Vollkorn', serif
-  font-weight 400
-  font-size 18px
-  line-height 34px
-  color black
-  text-align left
-  max-width 400px
-  min-width 100px
-  letter-spacing 0.15px
-  
-hr
-  text-align center
-  //margin 2em auto
-  // max-width: 5em;
-  border-top-color: rgba(0,0,0,0.1);
-  
-a
-  text-decoration none
+.wrapper-main //Basic Wrapper
+  width: 100%
+  height: 100%
+  padding-top: 8%
+  display: flex
+  justify-content: center
+  +below($desktop)
+    padding-top: 15%
 
+.wrapper //Basic Wrapper
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
 
-
-//////////////////////////////////////////////////// 
-// NAV START
+.container //Basic Container
+  width: 900px
+  height: 100%
+  +below($desktop)
+    padding: 0% 14% 0% 14%
 
 header
   width 100%
@@ -126,275 +46,194 @@ header
   top 0
   left 0
   z-index 1002
-  //box-shadow 0 2px 20px rgba(0,0,0,0.125)
-  //background #fa6347
-  -webkit-transition height 0.3s
-  -moz-transition height 0.3s
-  -ms-transition height 0.3s
-  -o-transition height 0.3s
-  transition height 0.3s
-  // +below(768px)
-  //   background rgba(255,255,255,.95)
 
-.Nav
-  list-style none
-  margin 0 auto
-  width 90%
-  padding 4%
-  //max-height 100px
-  display -webkit-box
-  display -moz-box
-  display -ms-flexbox
-  display -webkit-flex
-  display flex
-  align-items center
-  -webkit-flex-flow wrap
-  justify-content space-between
-  // +below(768px)
-  //   h1, p
-  //     color #ffffff
-  li
-    padding 17px 0px 0px 30px
-  a
-    text-decoration none
-    display block
-    //padding 1em
-    //color white
-    
-.Nav li:first-child
-  padding 2% 
-  width 80px
-  height 45px
-  display flex
-  justify-content center
-  align-items center
-  background-color #000000
-  -webkit-transition all 0.2s ease-out
-  -moz-transition all 0.2s ease-out
-  -ms-transition all 0.2s ease-out
-  -o-transition all 0.2s ease-out
-  transition all 0.2s ease-out
-  h3
-    color white
-  // &:hover
-  //   width 150px    
+//////////////////////////////////////////
+//GlobalStyles
+////Type, Rules, Buttons, Links, Bars
 
-// .Nav li:last-child
-//   padding 17px 0px 0px 34px
-//   width 140px
-//   -webkit-transition all 0.2s ease-out
-//   -moz-transition all 0.2s ease-out
-//   -ms-transition all 0.2s ease-out
-//   -o-transition all 0.2s ease-out
-//   transition all 0.2s ease-out
-//   &:hover
-//     width 150px
-  
+h1 //Headline Sans-Serif
+  font-family: 'Lato', sans-serif
+  font-weight: 900
+  font-size: 250%
+  line-height: 150%
+  color: $black
+  text-align: left
 
-    
-#MovingNav 
-  width 75%
-  display flex
-  justify-content flex-start
-  margin 0 auto
-  #MovingList
-    padding-top 25px
-    li
-      padding 10px 0px 0px 7px
-  
-  
-////////////////////////////////////////////////////
+h2 //Headline Serif
+  font-family: 'Vollkorn', serif
+  font-weight: 400
+  font-size: 250%
+  line-height: 150%
+  color: $black
+  text-align: left
+
+h3 //Sub-Head Sans-Serif
+  font-family:'Lato', sans-serif
+  font-weight: 900
+  font-size: 150%
+  line-height: 125%
+  color: $black
+  text-align: left
+
+h4 //Sub-Head Serif
+  font-family: 'Vollkorn', serif
+  font-weight: 400
+  font-size: 150%
+  line-height: 125%
+  color: $black
+  text-align: left
 
 
 
-////////////////////////////////////////////////////
-//Home STYLES
+p //Body Copy 01 Style
+  font-family 'Vollkorn', serif
+  font-weight: 400
+  font-size: 125%
+  line-height: 150%
+  color: $black
+  text-align: left
 
-.IntroWrapper
-  height 500px
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap wrap
-  flex-direction column
-  
-.IntroImage
-  width 45%
-  margin 0 auto  
+hr //Rule
+  text-align center
+  border-top-color: rgba(0,0,0,0.1);
 
-#IntroImageScreenClip 
-  clip-path circle(40% at 50% 50%);
-  display flex
-  justify-content center
-  
-  
-.IntroText
-  text-decoration none
-  color #222
+a //No Text-decoration ever
+  text-decoration: none
+
+
+//Button Styles
+button, .view-more //Used for View more
+  width: 200px
+  height: 40px
+  border: 4px solid $black
+  display: flex
+  justify-content: center
+  align-items: center
+  -webkit-transition: all 0.2s ease-out
+  -moz-transition: all 0.2s ease-out
+  -ms-transition: all 0.2s ease-out
+  -o-transition: all 0.2s ease-out
+  transition: all 0.2s ease-out
   &:hover
-    text-decoration underline
-    color grey
-
-  
-////////////////////////////////////////////////////
-// BUTTONS
-
-.Button2Wrapper
-  height 30px
-  width 68px
-  //background-color green
-  padding 35px 
-  .Button2
-    background-color #000000
-    box-shadow: -4px 4px 16px -3px rgba(0,0,0,0.2)
-    width: 68px;
-    height: 40px;
-    display flex
-    flex-direction row
-    align-items center
-    justify-content space-between
-    -webkit-transition all 0.2s ease-out
-    -moz-transition all 0.2s ease-out
-    -ms-transition all 0.2s ease-out
-    -o-transition all 0.2s ease-out
-    transition all 0.2s ease-out
-    a 
-      text-decoration none
-    h3
-      color white
-      font-size 20px
-      padding-right 20px
-    i
-      color #000000
-      padding-bottom: 3px;
-      padding-left: 7px;
-      -webkit-transition all 0.15s ease-out
-      -moz-transition all 0.15s ease-out
-      -ms-transition all 0.15s ease-out
-      -o-transition all 0.15s ease-out
-      transition all 0.15s ease-out
-      
-
-  
-  .Button2:hover
-    height 40px
-    width 90px
-    //border 4px solid #000
-    background-color #000000
-    i
-      padding-bottom: 3px;
-      padding-left: 17px;
-      color #ffffff
-      -webkit-transition all 0.15s ease-in
-      -moz-transition all 0.15s ease-in
-      -ms-transition all 0.15s ease-in
-      -o-transition all 0.15s ease-in
-      transition all 0.15s ease-in
+    width: 220px
+    background-color: $offwhite
 
 
 
-  .Button
-    width 56%
-    height 30px
-    // min-width 30%
-    border 0px solid #000
-    display flex
-    justify-content center
-    align-items center
-    text-decoration none
-    -webkit-transition all 0.2s ease-out
-    -moz-transition all 0.2s ease-out
-    -ms-transition all 0.2s ease-out
-    -o-transition all 0.2s ease-out
-    transition all 0.2s ease-out
-    
-  .Button:hover
-    height 30px
-    border 4px solid #000
-    background-color #F8F8F8
-    
+
+
+//Bars
+.top, .bottom, .left, .right {
+  background-color: #000000;
+  position: fixed;
+  z-index 999
+  }
+  .left, .right {
+    top: 0; bottom: 0;
+    width: 15px;
+    }
+    .left {
+      left: 0;
+    }
+    .right {
+      right: 0;
+    }
+
+  .top, .bottom {
+    left: 0; right: 0;
+    height: 15px;
+    }
+    .top {
+      top: 0;
+    }
+    .bottom {
+      bottom: 0;
+      }
+
+.top, .bottom, .left, .right
+  +below(600px)
+    visibility hidden
 
 
 
-    
-////////////////////////////////////////////////////
-//PROJECT STYLES
+//////////////////////////////////////////
 
-.ProjectBand
+.wrapper-hero
+  width: 100%
+  height: 100%
+  display: flex
+  justify-content: center
+  background-color: $green
+  .hero
+    height: 300px
+    background-color: $white
+
+
+
+
+
+
+//////////////////////////
+// Old Footer Styles
+.FooterWrapper
+  background-color #000000
   height 100%
+  width 100%
+  bottom: 0
 
-.ProjectWrapper
-  position relative
-  .ProjectContentWrapper
-    //background-color #ffffff
-    z-index 3
-    .ProjectLogo
-      width 75%
-      padding-top 3%
-      margin 0 auto
-      display flex
-      justify-content center
-      img
-        width 20%
-        height 20% 
-      #MarlinLogo
-        padding 2% 4% 
-  .ProjectIntro
-    width 75%
-    max-width 1200px
-    height 100%
-    margin 0 auto
-    padding-bottom 15px
-    padding-top 2%
-    border-radius: 4px
-    display flex
-    flex-wrap wrap
-    +below(600px)
-      width 95%
-    .ProjectLogo
-      width 20%
-      height 20%
-    h3
-      width 100%
-    p       
-      font-size: 20px;
-      text-align: center;
-      margin: 0 auto;
-      max-width: 80%;
-      padding-bottom: 3%;
-    a 
-      text-decoration none
-   
-.WorkWrapper
-  height auto
-  width auto
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  +below(600px)
-    height 200px
-  .Work
-    height 100%
-    width 100%
-    display flex
-    align-items flex-end
-    z-index 1000
-    
-.WorkImage
-  width 775px
-  // max-height auto
-  margin 0 auto
+.FooterContent
+  cf()
+  width 90%
+  height 100px
+  max-width 1200px
   display flex
+  background-color #000000
+  justify-content center
+  padding-right 5%
+  padding-left 5%
   +below(600px)
-    margin 0 auto
-    width 100%
-    overflow hidden
-
-  
+    flex-wrap wrap
+    width 95%
+  .FooterLeft
+    col(1/2, gutter: 2, cycle: 2)
+    width 75%
+    display flex
+    align-items center
+    justify-content flex-start
+    +below(600px)
+      width 100%
+    h3
+      text-align left
+      color white
+      letter-spacing 1.25px
+      font-size 20px
+      +below(600px)
+        justify-content fle
+  .FooterRight
+    col(1/2, gutter: 2, cycle: 2)
+    width 25%
+    display flex
+    align-items center
+    flex-direction row
+    justify-content flex-end
+    +below(600px)
+      width 100%
+    h2
+      color white
+      width 100%
+      display flex
+      justify-content space-between
+      padding-bottom 0%
+      +below(600px)
+        justify-content flex-start
+        i
+          padding-right 25px
+    a
+      color white
 
 ////////////////////////////////////////////////////
 // Blog STYLES
- 
+
 .blog-posts
   width 100%
   .post
@@ -403,40 +242,37 @@ header
     margin 0 auto
     padding 3% 3% 6% 3%
     box-sizing border-box
-    // box-shadow: 0px 1px 1px 0px #dfdfdf;
-    // background-color #ffffff
-    // border-radius: 9px;
     img
       max-width 100%
       height auto
     +below(768px)
-      width 100% 
-      
-     
+      width 100%
+
+
 .post-wrapper
   padding 20px 0px 20px 0px
-  height 100% 
-  
-  
+  height 100%
+
+
 
 .post-info-wrapper
   display flex
   flex-direction row
   justify-content space-between
-  flex-wrap wrap 
-  
+  flex-wrap wrap
+
 .date
   color black
   font-family helvetica
   font-size 14px
-   
 
-.tag-wrapper 
+
+.tag-wrapper
   height 100%
   width 70%
   text-align right
   line-height 28px
-  
+
 
 .tags
   font-size 14px
@@ -448,6 +284,3 @@ header
   background-color #ffffff
   border-radius 6px
   margin-left 1%
-
-
-  

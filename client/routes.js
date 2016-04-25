@@ -31,10 +31,6 @@ Router.map(function() {
   });
 });
 
-
-
-
-
 Router.map(function() {
   this.route('cobb', {
     path: '/cobb',
@@ -48,7 +44,6 @@ Router.map(function() {
     template: 'sbx'
   });
 });
-
 
 Router.map(function() {
   this.route('bush', {
@@ -65,14 +60,8 @@ Router.map(function() {
 });
 
 Router.map(function() {
-  this.route('port', {
-    path: '/port',
-    template: 'port'
+  this.route('colophon', {
+    path: '/colophon',
+    template: 'colophon'
   });
 });
-
-
-
-
-
-
