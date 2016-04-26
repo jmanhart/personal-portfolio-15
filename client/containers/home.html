@@ -1,20 +1,23 @@
 <template name="home">
-  <div class="wrapper">
-      <div class="container">
 
-        <section id="home">
-          <div class="grid" id="home">
-            <div class="column single">
-              <h1 class="center">John Manhart</h1> <br/>
-              <h4 class="center">A web designer living in the Midwest. </h4>
-              <button class="view-more center">
-                <h3>More About</h3>
-              </button>
-            </div>
-          </div>
-        </section>
-
-        {{>bands}}
+  <section class="centered" id="home">
+    <div class="grid" id="home">
+      <div class="column single">
+        <img src="/images/me-blk.png"/>
+        <h1 class="center">John Manhart</h1> <br/>
+        <h4 class="center">A web designer living in the Midwest. </h4>
+        <a href="{{pathFor 'about'}}">
+          <button class="view-more center">
+            <h3>More About</h3>
+          </button>
+        </a>
       </div>
-  </div>
+    </div>
+  </section>
+
+
+    {{>bands}}
+
+
+
 </template>

@@ -10,9 +10,11 @@
  </body>
 
  <template name="layout">
+
    {{>bars}}
      {{>navigation}}
-       {{> yield}}
-
-  <!-- {{>footer}} -->
+     <div class="wrapper">
+        {{> yield}}
+    </div>
+  {{>footer}}
  </template>
