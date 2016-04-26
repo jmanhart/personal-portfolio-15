@@ -17,12 +17,6 @@ Router.map(function() {
   });
 });
 
-Router.map(function() {
-  this.route('contact', {
-    path: '/contact',
-    template: 'contact'
-  });
-});
 
 Router.map(function() {
   this.route('blog', {
@@ -52,28 +46,10 @@ Router.map(function() {
   });
 });
 
-Router.map(function() {
-  this.route('sgfc', {
-    path: '/sgfc',
-    template: 'sgfc'
-  });
-});
 
 Router.map(function() {
-<<<<<<< HEAD
-  this.route('coffee', {
-    path: '/coffee',
-    template: 'coffee',
-=======
   this.route('colophon', {
     path: '/colophon',
     template: 'colophon'
->>>>>>> df31d5f52985b6de86418c4270c47d2d54c36518
   });
 });
-
-
-
-    // waitOn: function() {
-    //   Meteor.subscribe('shoplist')
-    // }

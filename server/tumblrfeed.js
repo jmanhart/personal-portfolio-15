@@ -5,7 +5,7 @@ if (Meteor.isServer) {
            )
 
        }
-        
+
     })
 
 }
