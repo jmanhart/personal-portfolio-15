@@ -6,18 +6,21 @@
 
 #home
   height: 350%
-  padding-bottom: 6vh
-  padding-top: 6vh
+  padding-bottom: 3.5vh
+  padding-top: 8.5vmin
   div, .column
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     img
-      width: 37vh
-      height: 37vh
+      width: 25vmin
+      height: 25vmin
+      +below($phablet)
+        width: 35vmin
+        height: 35vmin
     h1
       width: 100%
-    h4
+    h2
       width: 100%
-      padding-bottom: 3%
+      padding-bottom: 2%

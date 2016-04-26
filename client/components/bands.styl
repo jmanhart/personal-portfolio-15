@@ -8,11 +8,27 @@
   .bands
     width: 600px
     max-width: 600px
-    height: 250px
+    height: 100%
     padding: 0% 15% 0% 15%
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     .column
       height: 100%
       display: flex;
       align-items: center;
       img
         width: 100%
+    .copy-side //Copy and button side styles
+      flex-wrap: wrap
+      align-items: center
+      align-content: center
+      +below($phablet)
+        justify-content: center
+      h3
+        padding-bottom: 5px
+      h4
+        padding-bottom: 15px
+        +below($phablet)
+          text-align: center;
