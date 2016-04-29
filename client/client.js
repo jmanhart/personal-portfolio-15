@@ -37,3 +37,23 @@ $(".big-item").on(enterBigEvent, function(e){
 $(".big-item").on(leaveBigEvent, function(e){
     // code here
 });
+
+
+
+
+
+/**
+ * Add a background image for certain routes.
+ */
+// var setBackground = function () {
+//   var route = this.route.name;
+//   var routes = ['bush'];
+//
+//   if (_.contains(routes, route)) {
+//     $('bars').addClass('showBackgroundImage');
+//   } else {
+//     $('bars').removeClass('showBackgroundImage');
+//   }
+// };
+//
+// Router.onBeforeAction(setBackground);

@@ -1,0 +1,33 @@
+@import 'rupture'
+@import 'nib'
+@import 'jeet'
+@import '../../../styles/vars.styl'
+@import '../../../styles/grid.styl'
+
+#bush-logo
+  height: 20vh
+  margin-top: -10vh
+  justify-content: center;
+
+#bush
+  height: 100%
+  width: 100%
+  .grid
+    padding: 1% 0% 0% 0%
+  .hero
+    background-image: -webkit-radial-gradient(center, #3b3ebb, #0b0d58);
+    display: flex;
+    align-items: flex-end;
+    height: 52vmax
+    img
+      height: 45vmax
+      padding: 4% 4% 0% 4%
+      +below($phablet)
+        width: 95%
+        height: auto
+        padding: 0%
+
+
+
+.bush-page
+  background-color: $green
