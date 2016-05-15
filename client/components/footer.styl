@@ -1,0 +1,60 @@
+@import 'rupture'
+@import 'nib'
+@import 'jeet'
+@import '../styles/vars.styl'
+
+
+
+.FooterWrapper
+  height 100%
+  width 100%
+  bottom: 0
+
+.FooterContent
+  cf()
+  width 90%
+  height 100px
+  max-width 1200px
+  display flex
+  justify-content center
+  padding-right 5%
+  padding-left 5%
+  +below(600px)
+    flex-wrap wrap
+    width 95%
+  .FooterLeft
+    col(1/2, gutter: 2, cycle: 2)
+    width 75%
+    display flex
+    align-items center
+    justify-content flex-start
+    +below(600px)
+      width 100%
+    h3
+      text-align left
+      color white
+      letter-spacing 1.25px
+      font-size 20px
+      +below(600px)
+        justify-content fle
+  .FooterRight
+    col(1/2, gutter: 2, cycle: 2)
+    width 25%
+    display flex
+    align-items center
+    flex-direction row
+    justify-content flex-end
+    +below(600px)
+      width 100%
+    h2
+      color white
+      width 100%
+      display flex
+      justify-content space-between
+      padding-bottom 0%
+      +below(600px)
+        justify-content flex-start
+        i
+          padding-right 25px
+    a
+      color white

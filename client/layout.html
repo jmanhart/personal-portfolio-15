@@ -11,10 +11,15 @@
 
  <template name="layout">
 
-     {{>navigation}}
-     <div class="wrapper">
-       {{> yield}}
-     </div>
+   <div class="{{currentRouteName}}">
+    {{>bars}}
+      {{>navigation}}
+      {{> yield}}
+    {{>footer}}
+  </div>
+
+
+
 
 
 

@@ -38,10 +38,6 @@ $(".big-item").on(leaveBigEvent, function(e){
     // code here
 });
 
-
-
-
-
 /**
  * Add a background image for certain routes.
  */

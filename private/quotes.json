@@ -1,0 +1,30 @@
+[
+	{
+	"quote": {
+			"one": {
+				"author": "Aldous Huxley",
+				"quote": "Technological progress has merely provided us with more effcient means for going backwards"
+			},
+
+			"two": {
+				"author": "C.P. Snow",
+				"quote": "Technology...is a queer thig. It brings you great gifts with one hand, and it stabs you in the back with the other"
+			},
+
+			"three": {
+				"author": "Carl Sagan",
+				"quote": "We live in a society equisitely dependent on science and technology, in which hardly anyone knows anything about science and technology."
+			},
+
+			"four": {
+				"author": "John Stuart Mill",
+				"quote": "It is questionable if all the mechanical inventions yet made have lightened the day's toil of any human being."
+			},
+
+			"five": {
+				"author": "Jean Arp",
+				"quote": "Man has tunred his back on silence. Day after day he invents machines and devices that increase noise and distract humanity from the essence of life, contemplation, meditation."
+			},
+		},
+	}
+]
