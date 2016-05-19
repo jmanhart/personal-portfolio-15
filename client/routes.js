@@ -46,6 +46,12 @@ Router.map(function() {
   });
 });
 
+Router.map(function() {
+  this.route('sgfc', {
+    path: '/sgfc',
+    template: 'sgfc'
+  });
+});
 
 Router.map(function() {
   this.route('colophon', {

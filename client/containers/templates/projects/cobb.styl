@@ -4,21 +4,48 @@
 @import '../../../styles/vars.styl'
 @import '../../../styles/grid.styl'
 
+#cobb-logo
+  height: 15vh
+  width: auto
+  margin-top: -65px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  display: flex
+
+#cobb-main
+    height: 100%
+    width: 100%
+    z-index: 1000
+    .grid
+      padding: 1% 0% 0% 0%
+    .hero
+      background-image: -webkit-radial-gradient(center, #e43b42, #c1353d)
+      display: flex;
+      align-items: flex-end;
+      height: 45vmax
+      z-index: 999
+      img
+        width: 100%
+        // padding: 4% 4% 0% 4%
+        +below($phablet)
+          width: 85%
+          padding: 3% 0% 0% 0%
 
 
-#cobb
-  height: 100%
-  width: 100%
+#cobb-intro
+  h2
+    font-size: 3vmin
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 2%
+
+#cobb-content
   .grid
-    padding: 1% 0% 0% 0%
-  .hero
-    background-image: -webkit-radial-gradient(center, #e43b42, #c1353d)
-    display: flex;
-    align-items: flex-end;
-    height: 45vmax
-    img
-      width: 100%
-      // padding: 4% 4% 0% 4%
-      +below($phablet)
-        width: 85%
-        padding: 3% 0% 0% 0%
+    .column
+      display: flex
+      justify-content: center;
+      img
+        width: 95%
+        height: 95%
