@@ -1,63 +1,63 @@
 <template name="bands">
   <section id="home-bands" class="centered">
     <hr>
-      <div class="grid bands" >
-        <div class="column halfs">
-          <img src="/images/work/bush/bush-home-02.png"/>
-        </div>
-
-        <div class="column halfs copy-side">
-          <h3>Bush's Best Digital</h3>
-          <h4>Interactive Design and Development</h4>
-          <a href="{{pathFor 'bush'}}">
-            <button class="view-more center">
-              <h3>View Project</h3>
-            </button>
-          </a>
-        </div>
+    <div class="grid bands" >
+      <div class="column halfs">
+        <img src="/images/work/bush/bush-home-02.png"/>
       </div>
+
+      <div class="column halfs copy-side">
+        <h3>Bush's Best Digital</h3>
+        <h4>UI Design and Development</h4>
+        <a href="{{pathFor 'bush'}}">
+          <button class="view-more center">
+            <h3>View Project</h3>
+          </button>
+        </a>
+      </div>
+    </div>
     <hr>
-      <div class="grid bands">
-        <div class="column halfs">
-          <img src="/images/work/cobb/cobb-home.png"/>
-        </div>
-
-        <div class="column halfs copy-side">
-          <h3>Cobb Digital</h3>
-          <h4>Interactive Design and Development</h4>
-          <a href="{{pathFor 'cobb'}}">
-            <button class="view-more center">
-              <h3>View Project</h3>
-            </button>
-          </a>
-        </div>
+    <div class="grid bands">
+      <div class="column halfs">
+        <img src="/images/work/cobb/cobb-home.png"/>
       </div>
+
+      <div class="column halfs copy-side">
+        <h3>Cobb Digital</h3>
+        <h4>Mobile & Web Design</h4>
+        <a href="{{pathFor 'cobb'}}">
+          <button class="view-more center">
+            <h3>View Project</h3>
+          </button>
+        </a>
+      </div>
+    </div>
     <hr>
-      <div class="grid bands">
-        <div class="column halfs">
-          <img src="/images/work/sbx/sbx-home.png"/>
-        </div>
-
-        <div class="column halfs copy-side">
-          <h3>Starbucks Digital</h3>
-          <h4>Interactive Design and Development</h4>
-          <a href="{{pathFor 'sbx'}}">
-            <button class="view-more center">
-              <h3>View Project</h3>
-            </button>
-          </a>
-        </div>
+    <div class="grid bands">
+      <div class="column halfs" id="sbx-band-img">
+        <img src="/images/work/sbx/sbx-home.png"/>
       </div>
+
+      <div class="column halfs copy-side">
+        <h3>Starbucks Digital</h3>
+        <h4>UX & UI Design</h4>
+        <a href="{{pathFor 'sbx'}}">
+          <button class="view-more center">
+            <h3>View Project</h3>
+          </button>
+        </a>
+      </div>
+    </div>
     <hr>
 
     <div class="grid bands">
-      <div class="column halfs">
+      <div class="column halfs" id="sgfc-band-img">
         <img src="/images/work/sgfc/sgfc-home.png"/>
       </div>
 
       <div class="column halfs copy-side">
         <h3>Springfield Creatives</h3>
-        <h4>Interactive Design and Development</h4>
+        <h4>UX & UI Design</h4>
         <a href="{{pathFor 'sgfc'}}">
           <button class="view-more center">
             <h3>View Project</h3>
@@ -65,6 +65,22 @@
         </a>
       </div>
     </div>
+    <hr>
+
+
+    <div class="grid bands">
+      <div class="column single copy-side" id="last-band">
+        <h3>Wanna Get Weird?</h3>
+        <h4>check out my <i>blog</i></h4>
+        <a href="{{pathFor 'blog'}}">
+          <button class="view-more center">
+            <h3>Here We Go</h3>
+          </button>
+        </a>
+      </div>
+    </div>
+
+
 
   </section>
 </template>

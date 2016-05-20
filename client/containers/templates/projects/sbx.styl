@@ -5,11 +5,20 @@
 @import '../../../styles/grid.styl'
 
 
+#sbx-logo
+  height: 15vh
+  width: auto
+  margin-top: -65px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  display: flex
 
-
-#sbx
+#sbx-main
   height: 100%
   width: 100%
+  z-index: 1000
   .grid
     padding: 1% 0% 0% 0%
   .hero
@@ -17,9 +26,27 @@
     display: flex;
     align-items: flex-end;
     height: 45vmax
+    z-index: 999
     img
       width: 75%
       // padding: 4% 4% 0% 4%
       +below($phablet)
         width: 85%
         padding: 3% 0% 0% 0%
+
+#sbx-intro
+  h2
+    font-size: 3vmin
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 4%
+
+
+#sbx-content
+  .grid
+    .column
+      display: flex
+      justify-content: center;
+      img
+        width: 95%
+        height: 95%

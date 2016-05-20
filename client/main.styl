@@ -53,7 +53,7 @@ header
 
 
 
-.home
+.home, .colophon, .blog
   .bar, .navagation-home-button, .FooterWrapper
     background-color: $black
   h1
@@ -66,23 +66,23 @@ header
 .bush
   .bar, .navagation-home-button, .FooterWrapper
     background-color: $blue
-  h1
+  h1, h3
     color: $blue
 .cobb
   .bar, .navagation-home-button, .FooterWrapper
     background-color: $red
-  h1
+  h1, h3
     color: $red
 .sbx
   .bar, .navagation-home-button, .FooterWrapper
     background-color: $green
-  h1
+  h1, h3
     color: $green
 
 .sgfc
   .bar, .navagation-home-button, .FooterWrapper
     background-color: #e2ac45
-  h1
+  h1, h3
     color: #e2ac45
 
 
@@ -101,10 +101,12 @@ h1 //Headline Sans-Serif
 h2 //Headline Serif
   font-family: 'Vollkorn', serif
   font-weight: 400
-  font-size: 4vmin
-  line-height: 150%
   color: $black
   text-align: left
+  font-size: 175%
+  line-height: 135%
+  +below($tablet)
+    max-width: 100%
 
 h3 //Sub-Head Sans-Serif
   font-family:'Lato', sans-serif
