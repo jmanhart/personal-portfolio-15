@@ -7,41 +7,49 @@
 
 
 
-#sgfc-band-img
-  width: 50%
+.project-band-rule
+  margin: 0%
 
 
-#home-bands
+
+.project-band-wrapper
   width: 100%
-  .bands
-    width: 600px
+  height: 100%
+  padding: 2% 0% 2% 0%
+  -webkit-transition: all 0.2s ease-out
+  -moz-transition: all 0.2s ease-out
+  -ms-transition: all 0.2s ease-out
+  -o-transition: all 0.2s ease-out
+  transition: all 0.2s ease-out
+  &:hover
+    background-color: rgba(0, 0, 0, 0.07)
+    -webkit-transition: all 0.2s ease-in
+    -moz-transition: all 0.2s ease-in
+    -ms-transition: all 0.2s ease-in
+    -o-transition: all 0.2s ease-in
+    transition: all 0.2s ease-in
+  .project-band
+    width: 100%
     max-width: 600px
-    height: 40%
-    padding: 0% 15% 0% 15%
+    margin: 0 auto
+    padding: 0%
     .column
-      height: 100%
-      display: flex;
-      align-items: center;
       img
         width: 100%
-    .copy-side //Copy and button side styles
-      display: flex
-      height: 50%
-      flex-wrap: wrap
-      align-items: center
-      margin-top: 9%
-      +below($phablet)
-        justify-content: center
-        margin-top: 3%
-      h3
-        padding-bottom: 5px
-        margin-top: 0px
-      h4
-        padding-bottom: 15px
-        margin-top: 0px
+      .band-copy
+        padding-top: 17%
         +below($phablet)
-          text-align: center;
-
-#last-band
-  margin: 4% 0% 8% 0%
-  flex-direction: column;
+          padding-top: 2%
+        h3
+          text-align: left;
+          margin-bottom: 5px
+          +below($phablet)
+            text-align: center
+        h4
+          margin-bottom: 4%
+          +below($phablet)
+            text-align: center
+        button
+          +below($phablet)
+            margin: 0 auto;
+            width: 95%
