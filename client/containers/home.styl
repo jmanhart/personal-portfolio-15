@@ -16,11 +16,19 @@
     img
       width: 25vmin
       height: 25vmin
+      transition .25s ease-out all
       +below($phablet)
-        width: 35vmin
-        height: 35vmin
+        width: 40vmin
+        height: 40vmin
+      // &:hover
+      //   transform scale(1.02)
     h1
       width: 100%
+      +below($tablet)
+        font-size: 200%
     h2
       width: 100%
       padding-bottom: 2%
+      +below($tablet)
+        font-size: 150%
+        padding: 0% 2% 2% 2%;

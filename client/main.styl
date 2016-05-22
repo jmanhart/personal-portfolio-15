@@ -38,9 +38,11 @@ body
   width: 100%
   height: 100%
   +above($desktop)
-    padding: 0% 10% 0% 10%
+    padding: 0% 12% 0% 12%
   +below($desktop)
     padding: 0% 9% 0% 9%
+  +below($phablet)
+    padding: 0% 6% 0% 6%
 
 header
   width 100%
@@ -93,10 +95,12 @@ header
 h1 //Headline Sans-Serif
   font-family: 'Lato', sans-serif
   font-weight: 900
-  font-size: 5vmin
+  font-size: 235%
   line-height: 150%
   color: $black
   text-align: left
+  +below($tablet)
+    max-width: 100%
 
 h2 //Headline Serif
   font-family: 'Vollkorn', serif
