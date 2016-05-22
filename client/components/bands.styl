@@ -10,7 +10,6 @@
 .project-band-wrapper
   width: 100%
   height: 100%
-  padding: 2% 0% 2% 0%
   -webkit-transition: all 0.2s ease-out
   -moz-transition: all 0.2s ease-out
   -ms-transition: all 0.2s ease-out
@@ -23,11 +22,12 @@
     -ms-transition: all 0.2s ease-in
     -o-transition: all 0.2s ease-in
     transition: all 0.2s ease-in
+  .grid
+    padding: 0%
   .project-band
     width: 100%
     max-width: 600px
     margin: 0 auto
-    padding: 0%
     .column
       img
         width: 100%
@@ -49,12 +49,22 @@
             margin: 0 auto;
             width: 95%
 
+//Aligning the images bottom and center Sorta a Hack need to re-think at some point
+// .aligned-center
+//   background-color: green
+//   padding-top: 2%
+//   padding-bottom: 2%
+//
+// .aligned-bottom
+//   background-color: yellow
+
 #blog-band-button
   display: flex;
   flex-direction: column
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 4%
+  margin-bottom: 6%
   h4
     margin-bottom: 2%
   button
