@@ -10,18 +10,27 @@
 .project-band-wrapper
   width: 100%
   height: 100%
+  padding: 2% 0% 2% 0%
   -webkit-transition: all 0.2s ease-out
   -moz-transition: all 0.2s ease-out
   -ms-transition: all 0.2s ease-out
   -o-transition: all 0.2s ease-out
   transition: all 0.2s ease-out
   &:hover
-    background-color: rgba(0, 0, 0, 0.07)
+    background-color: rgba(0, 0, 0, 0.04)
     -webkit-transition: all 0.2s ease-in
     -moz-transition: all 0.2s ease-in
     -ms-transition: all 0.2s ease-in
     -o-transition: all 0.2s ease-in
     transition: all 0.2s ease-in
+    .column
+      .band-copy
+        a
+          h3
+            i
+              transform: translateX(12px);
+              transition: all 200ms ease-in-out;
+              color: $black
   .grid
     padding: 0%
   .project-band
@@ -32,7 +41,7 @@
       img
         width: 100%
       .band-copy
-        padding-top: 17%
+        padding-top: 19%
         +below($phablet)
           padding-top: 2%
         h3
@@ -44,10 +53,16 @@
           margin-bottom: 4%
           +below($phablet)
             text-align: center
-        button
-          +below($phablet)
-            margin: 0 auto;
-            width: 95%
+        a
+          h3
+            font-size: 115%
+            transition: all 200ms ease-in-out;
+            +below($phablet)
+              margin: 0 auto;
+              width: 95%
+          i
+            transition: all 200ms ease-in-out;
+            color: transparent
 
 //Aligning the images bottom and center Sorta a Hack need to re-think at some point
 // .aligned-center
@@ -58,9 +73,9 @@
 // .aligned-bottom
 //   background-color: yellow
 
-#sgfc-band-img
-  width: 80%
-  
+
+
+
 #blog-band-button
   display: flex;
   flex-direction: column
