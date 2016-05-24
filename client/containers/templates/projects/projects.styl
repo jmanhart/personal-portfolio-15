@@ -16,6 +16,9 @@
   display: flex
   position: relative;
   z-index: 2
+  +below($phablet)
+    height: 7vh
+    padding-top: 30px;
 
 .project-main
   height: 100%
@@ -37,8 +40,12 @@
       padding: 3% 0% 0% 0%
 
 .project-intro
+  h1
+    padding-bottom: 1%
+
   h2
-    font-size: 3vmin
+    max-width: 800px
+    padding: 0% 1% 0% 1%
     margin: 0 auto;
     position: relative;
     margin-bottom: 4%
@@ -52,3 +59,7 @@
       img
         width: 95%
         height: 95%
+
+.project-credit
+  margin-top: 4%;
+  margin-bottom: 1%;

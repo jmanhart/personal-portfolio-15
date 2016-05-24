@@ -74,12 +74,14 @@ header
     color: $blue
   .project-main
     background-image: -webkit-radial-gradient(center, #3b3ebb, #0b0d58);
+    background-color: $blue
 
 .cobb
   .bar, .navagation-home-button, .FooterWrapper
     background-color: $red
   .project-main
     background-image: -webkit-radial-gradient(center, #e43b42, #c1353d)
+    background-color: $red
   h1, h3
     color: $red
 
@@ -90,6 +92,7 @@ header
     color: $green
   .project-main
     background-image: -webkit-radial-gradient(center, #04c383, #00704a)
+    background-color: $green
 
 .sgfc
   .bar, .navagation-home-button, .FooterWrapper
@@ -98,6 +101,7 @@ header
     color: #e2ac45
   .project-main
     background-image: -webkit-radial-gradient(center, #fcebd2, #e2ac45);
+    background-color: #e2ac45
 
 
 //////////////////////////////////////////
@@ -113,6 +117,7 @@ h1 //Headline Sans-Serif
   text-align: left
   +below($tablet)
     max-width: 100%
+    line-height: 125%
 
 h2 //Headline Serif
   font-family: 'Vollkorn', serif
@@ -154,7 +159,7 @@ hr //Rule
   text-align center
   width: 100%
   z-index: -999
-  border-top-color: rgba(0,0,0,0.1);
+  border-top-color: rgba(0,0,0,0.025);
   margin: 2% 0% 2% 0%
   +below($phablet)
     margin: 4% 0% 4% 0%
@@ -163,17 +168,6 @@ a //No Text-decoration ever
   text-decoration: none
 
 
-
-.dev-content-wrapper
-  width 960px
-  margin 0 auto
-  padding-bottom 1%
-  border-radius: 4px;
-  +below(960px)
-    width 85%
-
-.main-content
-  text-align center
 
 //Button Styles
 button, .view-more //Used for View more
