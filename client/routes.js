@@ -59,3 +59,10 @@ Router.map(function() {
     template: 'colophon'
   });
 });
+
+Router.map(function() {
+  this.route('books', {
+    path: '/books',
+    template: 'books'
+  });
+});

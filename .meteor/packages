@@ -2,7 +2,6 @@ standard-app-packages
 iron:router
 jquery
 mquandalle:stylus
-standard-minifiers
 meteorhacks:npm
 momentjs:moment
 cosmos:browserify
@@ -14,3 +13,5 @@ dispatch:spinner
 
 
 npm-container
+standard-minifier-css
+standard-minifier-js
